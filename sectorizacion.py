@@ -95,6 +95,9 @@ def mostrar_sectorizacion():
                 }
                 
                 st.session_state.sectores.append(nuevo_sector)
+                
+
+                
                 st.success(f"✅ Sector '{nombre_sector}' agregado exitosamente!")
                 st.rerun()
             else:

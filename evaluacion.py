@@ -105,6 +105,9 @@ def mostrar_evaluacion():
     
     Esta sección te permite evaluar el proceso completo de diagnóstico comunitario 
     y exportar los resultados para tu portafolio académico.
+    
+    **💡 Tip:** También puedes usar la "Evaluación MAIS Oficial" para aplicar 
+    las métricas estándar del Modelo de Atención Integral en Salud.
     """)
     
     # Verificar completitud del proceso
@@ -213,13 +216,13 @@ def mostrar_evaluacion():
     calidad_puntos = 0
     max_puntos = 0
     
-    # Evaluar sectorización
+    # Evaluar sectorización (Métricas MAIS - Comunidad)
     if st.session_state.sectores:
         max_puntos += 20
         if len(st.session_state.sectores) >= 2:
-            calidad_puntos += 10
+            calidad_puntos += 10  # Participación comunitaria
         if any(s["vulnerabilidad"] in ["Alta", "Crítica"] for s in st.session_state.sectores):
-            calidad_puntos += 10
+            calidad_puntos += 10  # Coordinación intersectorial
     
     # Evaluar registro de familias
     if st.session_state.familias:
@@ -524,3 +527,14 @@ def mostrar_evaluacion():
     
     st.success("🎓 **¡Has completado exitosamente el simulador de diagnóstico comunitario!**")
     st.info("Este proceso te ha preparado para realizar diagnósticos comunitarios reales en el contexto de APS.") 
+    
+    # Footer con información de autoría
+    st.markdown("---")
+    st.markdown("""
+    <div style="text-align: center; padding: 15px; background-color: #f0f2f6; border-radius: 8px; margin-top: 20px;">
+        <p style="color: #666; font-size: 12px; margin: 0;">
+            Aplicación educativa desarrollada por Ricardo Delannoy Suazo para formación en diagnóstico comunitario en salud familiar.<br>
+            © 2025. Todos los derechos reservados.
+        </p>
+    </div>
+    """, unsafe_allow_html=True) 

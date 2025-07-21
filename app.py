@@ -112,7 +112,27 @@ def main():
     elif choice == "📋 Plan de Intervención":
         mostrar_plan_intervencion()
     elif choice == "📊 Evaluación":
-        mostrar_evaluacion()
+        submenu = st.sidebar.selectbox(
+            "Tipo de Evaluación",
+            ["🎓 Autoevaluación General", "📋 Evaluación MAIS Oficial"]
+        )
+        if submenu == "🎓 Autoevaluación General":
+            mostrar_evaluacion()
+        else:
+            from evaluacion_mais_oficial import mostrar_evaluacion_mais_oficial
+            mostrar_evaluacion_mais_oficial()
+
+    
+    # Footer global con información de autoría
+    st.markdown("---")
+    st.markdown("""
+    <div style="text-align: center; padding: 15px; background-color: #f0f2f6; border-radius: 8px; margin-top: 20px;">
+        <p style="color: #666; font-size: 12px; margin: 0;">
+            Aplicación educativa desarrollada por Ricardo Delannoy Suazo para formación en diagnóstico comunitario en salud familiar.<br>
+            © 2025. Todos los derechos reservados.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
 
 def mostrar_inicio():
     st.markdown("""

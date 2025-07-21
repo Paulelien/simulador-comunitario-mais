@@ -1,0 +1,431 @@
+GUÍA COMPLETA DEL SIMULADOR COMUNITARIO MAIS
+Para Estudiantes TENS - Salud Familiar y Comunitaria
+
+================================================================================
+
+ÍNDICE
+
+1. INTRODUCCIÓN AL MODELO MAIS
+2. NAVEGACIÓN DE LA APLICACIÓN
+3. SECCIÓN 1: INICIO
+4. SECCIÓN 2: SECTORIZACIÓN
+5. SECCIÓN 3: EQUIPO DE CABECERA
+6. SECCIÓN 4: REGISTRO DE FAMILIAS
+7. SECCIÓN 5: DIAGNÓSTICO COMUNITARIO
+8. SECCIÓN 6: TRABAJO EN RED
+9. SECCIÓN 7: PLAN DE INTERVENCIÓN
+10. SECCIÓN 8: EVALUACIÓN
+11. METODOLOGÍA ANDRAGÓGICA
+12. EVALUACIÓN Y CRITERIOS
+13. RECOMENDACIONES PRÁCTICAS
+14. GLOSARIO DE TÉRMINOS
+
+================================================================================
+
+1. INTRODUCCIÓN AL MODELO MAIS
+
+¿Qué es el MAIS?
+El Modelo de Atención Integral de Salud (MAIS) es una estrategia del Ministerio de Salud de Chile que busca mejorar la atención primaria de salud a través de un enfoque integral, familiar y comunitario.
+
+Objetivos del Simulador:
+• Simular el proceso completo de diagnóstico comunitario
+• Desarrollar competencias prácticas en atención primaria
+• Aplicar el modelo MAIS en situaciones simuladas
+• Generar habilidades de análisis y planificación
+
+Competencias que desarrollarás:
+✓ Sectorización territorial
+✓ Formación de equipos de cabecera
+✓ Registro y análisis familiar
+✓ Diagnóstico comunitario
+✓ Trabajo en red intersectorial
+✓ Planificación de intervenciones
+
+================================================================================
+
+2. NAVEGACIÓN DE LA APLICACIÓN
+
+Estructura de la Aplicación:
+La aplicación está dividida en 8 secciones que siguen el proceso del MAIS:
+
+Menú Lateral:
+🏠 Inicio - Bienvenida y progreso
+🗺️ Sectorización - Crear sectores territoriales
+👥 Equipo de Cabecera - Asignar profesionales
+👨‍👩‍👧‍👦 Registro de Familias - Registrar familias
+🔍 Diagnóstico - Analizar datos comunitarios
+🌐 Trabajo en Red - Coordinar instituciones
+📋 Plan de Intervención - Crear actividades
+📊 Evaluación - Exportar y evaluar
+
+Cómo Navegar:
+1. Usa el menú lateral para cambiar entre secciones
+2. Completa las secciones en orden recomendado
+3. Observa la barra de progreso en la página de inicio
+4. Usa el botón "Cargar Datos de Ejemplo" para empezar rápido
+
+================================================================================
+
+3. SECCIÓN 1: INICIO
+
+¿Qué encontrarás aquí?
+• Panel de bienvenida con información del MAIS
+• Barra de progreso que muestra tu avance
+• Botón "Cargar Datos de Ejemplo" para empezar rápidamente
+• Resumen ejecutivo de tu trabajo
+
+Actividad de Aprendizaje:
+1. Lee la introducción al Modelo MAIS
+2. Haz clic en "Cargar Datos de Ejemplo" para ver cómo funciona
+3. Observa el progreso en la barra lateral
+4. Familiarízate con la navegación
+
+Pregunta Reflexiva:
+¿Por qué es importante seguir un modelo estructurado como el MAIS en la atención primaria?
+
+================================================================================
+
+4. SECCIÓN 2: SECTORIZACIÓN
+
+¿Qué es la Sectorización?
+Es el proceso de dividir el territorio en áreas geográficas manejables para la atención de salud, considerando población, familias, tipo de territorio y vulnerabilidad.
+
+Datos a Ingresar:
+• Nombre del sector (ej: "Sector Norte")
+• Población total (ej: 1000 personas)
+• Número de familias (ej: 250 familias)
+• Tipo de territorio (Urbano/Rural/Mixto)
+• Nivel de vulnerabilidad (Alto/Medio/Bajo)
+
+Actividad Práctica:
+1. Crea 3-4 sectores con características diferentes:
+   - Sector Norte: Urbano, alta vulnerabilidad
+   - Sector Centro: Mixto, vulnerabilidad media
+   - Sector Sur: Rural, baja vulnerabilidad
+
+2. Observa las visualizaciones:
+   - Mapa esquemático de sectores
+   - Gráfico de población por sector
+   - Distribución de vulnerabilidad
+
+Pregunta Reflexiva:
+¿Cómo influye la vulnerabilidad del territorio en la planificación de la atención de salud?
+
+================================================================================
+
+5. SECCIÓN 3: EQUIPO DE CABECERA
+
+¿Qué es el Equipo de Cabecera?
+Es el grupo de profesionales de salud asignados a cada sector, responsables de la atención integral de las familias.
+
+Datos a Ingresar:
+• Selecciona un sector de la lista desplegable
+• Asigna profesionales según las necesidades:
+  - Médicos: 1-2 por sector
+  - Enfermeras: 2-3 por sector
+  - TENS: 3-5 por sector
+  - Matronas: 1 por sector
+  - Psicólogos: 0-1 por sector
+
+• Completa la información del equipo:
+  - Jefe de equipo
+  - Teléfono de contacto
+  - Horario de atención
+  - Modalidad de trabajo
+
+Análisis de Cobertura:
+La aplicación calcula automáticamente:
+• Familias por TENS (ideal: 50-150)
+• Población por médico (ideal: 1000-2000)
+• Recomendaciones de ajuste
+
+Pregunta Reflexiva:
+¿Cómo se determina la composición ideal de un equipo de cabecera según las características del sector?
+
+================================================================================
+
+6. SECCIÓN 4: REGISTRO DE FAMILIAS
+
+¿Qué información se registra?
+Datos demográficos, sociales y de salud que permiten identificar factores de riesgo y protección.
+
+Datos a Completar:
+• Datos básicos: Apellido, integrantes, jefe de hogar
+• Vivienda: Tipo, hacinamiento, red de apoyo
+• Salud: Enfermedades crónicas, factores de riesgo
+• Social: Participación, acceso a servicios
+
+Actividad Práctica:
+Registra 5-10 familias con diferentes perfiles:
+• Familia joven con niños
+• Familia con adultos mayores
+• Familia monoparental
+• Familia con enfermedades crónicas
+
+Cálculo Automático de Riesgos:
+La aplicación calcula:
+• Riesgo Social (0-15 puntos)
+• Riesgo Sanitario (0-12 puntos)
+• Nivel de vulnerabilidad (Bajo/Medio/Alto)
+
+Factores de Riesgo Social:
+• Hacinamiento (3 puntos)
+• Red de apoyo débil (2 puntos)
+• Participación social baja (2 puntos)
+• Acceso difícil a APS (2 puntos)
+• Violencia intrafamiliar (3 puntos)
+• Desempleo (2 puntos)
+• Adulto mayor solo (1 punto)
+
+Factores de Riesgo Sanitario:
+• Enfermedades crónicas (2 puntos cada una)
+• Embarazo adolescente (3 puntos)
+• Consumo de drogas (3 puntos)
+• Discapacidad (2 puntos)
+
+Pregunta Reflexiva:
+¿Cómo se relacionan los factores sociales con los riesgos sanitarios en una familia?
+
+================================================================================
+
+7. SECCIÓN 5: DIAGNÓSTICO COMUNITARIO
+
+¿Qué es el Diagnóstico Comunitario?
+Es el análisis integral de los datos recopilados para identificar problemas, necesidades y recursos de la comunidad.
+
+Actividad Práctica:
+1. Revisa el resumen de datos:
+   • Total de familias registradas
+   • Distribución por sector
+   • Perfil de riesgo general
+
+2. Analiza las visualizaciones:
+   • Gráfico de distribución de riesgos
+   • Comparación entre sectores
+   • Factores de riesgo más frecuentes
+
+3. Responde las preguntas guía:
+   • ¿Cuáles son los principales problemas identificados?
+   • ¿Qué grupos están más vulnerables?
+   • ¿Qué recursos comunitarios existen?
+
+Indicadores Clave:
+• Prevalencia de riesgo alto: % de familias con riesgo alto
+• Distribución sectorial: Concentración de problemas
+• Factores predominantes: Riesgos más frecuentes
+
+Pregunta Reflexiva:
+¿Cómo se transforman los datos cuantitativos en un diagnóstico cualitativo de la comunidad?
+
+================================================================================
+
+8. SECCIÓN 6: TRABAJO EN RED
+
+¿Qué es el Trabajo en Red?
+Es la coordinación con instituciones y organizaciones comunitarias para abordar los problemas identificados de manera integral.
+
+Actividad Práctica:
+1. Registra instituciones comunitarias:
+   • Educación: Escuelas, jardines infantiles
+   • Salud: CESFAM, hospitales, farmacias
+   • Social: Municipalidad, organizaciones sociales
+   • Seguridad: Carabineros, bomberos
+   • Otros: Iglesias, clubes deportivos
+
+2. Evalúa la red:
+   • Fortalezas: Recursos disponibles
+   • Debilidades: Gaps en la atención
+   • Oportunidades: Posibles alianzas
+
+Análisis de Red:
+• Cobertura institucional por sector
+• Tipos de servicios disponibles
+• Calidad de coordinación (Buena/Regular/Débil)
+
+Pregunta Reflexiva:
+¿Por qué es fundamental el trabajo intersectorial en la atención primaria de salud?
+
+================================================================================
+
+9. SECCIÓN 7: PLAN DE INTERVENCIÓN
+
+¿Qué es el Plan de Intervención?
+Es la programación de actividades específicas para abordar los problemas identificados en el diagnóstico.
+
+Actividad Práctica:
+1. Crea objetivos específicos:
+   • Objetivo 1: Reducir la prevalencia de riesgo alto en un 20%
+   • Objetivo 2: Mejorar el acceso a servicios de salud
+   • Objetivo 3: Fortalecer las redes de apoyo social
+
+2. Diseña actividades para cada objetivo:
+   • Actividad: Visitas domiciliarias intensivas
+   • Responsable: TENS del sector
+   • Cronograma: Semanal por 3 meses
+   • Recursos: Material educativo, transporte
+   • Indicadores: Número de visitas, cambios en riesgo
+
+Seguimiento del Plan:
+• Cobertura de actividades por sector
+• Progreso hacia objetivos
+• Recursos utilizados
+
+Pregunta Reflexiva:
+¿Cómo se asegura que las intervenciones sean efectivas y sostenibles en el tiempo?
+
+================================================================================
+
+10. SECCIÓN 8: EVALUACIÓN
+
+¿Qué es la Evaluación del Proceso?
+Es el análisis del trabajo realizado y la medición de los resultados obtenidos.
+
+Actividad Práctica:
+1. Revisa el progreso general:
+   • Sectores completados
+   • Familias registradas
+   • Equipos asignados
+
+2. Completa la autoevaluación:
+   • Comprensión del MAIS: 1-5 puntos
+   • Aplicación práctica: 1-5 puntos
+   • Análisis de datos: 1-5 puntos
+   • Planificación: 1-5 puntos
+
+3. Exporta tus resultados:
+   • PDF: Para presentación formal
+   • Excel: Para análisis detallado
+   • JSON: Para procesamiento técnico
+
+Indicadores de Evaluación:
+• Completitud: % de secciones completadas
+• Calidad: Puntuación de autoevaluación
+• Aplicabilidad: Relevancia para la práctica
+
+Pregunta Reflexiva:
+¿Cómo se puede mejorar el proceso de diagnóstico comunitario basado en esta experiencia?
+
+================================================================================
+
+11. METODOLOGÍA ANDRAGÓGICA
+
+Principios Aplicados:
+1. Autodirección: El estudiante controla su ritmo de aprendizaje
+2. Experiencia previa: Se basa en conocimientos de salud comunitaria
+3. Orientación a problemas: Simula situaciones reales de trabajo
+4. Motivación intrínseca: Aplicación práctica inmediata
+
+Estrategias de Aprendizaje:
+• Aprendizaje por descubrimiento: Exploración guiada de la aplicación
+• Aprendizaje basado en problemas: Resolución de casos simulados
+• Aprendizaje colaborativo: Discusión de resultados con pares
+• Aprendizaje reflexivo: Preguntas de reflexión en cada sección
+
+================================================================================
+
+12. EVALUACIÓN Y CRITERIOS
+
+Criterios de Evaluación:
+1. Comprensión del MAIS (25%)
+   • Identificación correcta de las etapas
+   • Aplicación del modelo en la simulación
+
+2. Análisis de Datos (30%)
+   • Interpretación de factores de riesgo
+   • Diagnóstico comunitario coherente
+
+3. Planificación (25%)
+   • Objetivos específicos y medibles
+   • Actividades apropiadas y realistas
+
+4. Reflexión Crítica (20%)
+   • Análisis de fortalezas y debilidades
+   • Propuestas de mejora
+
+Instrumentos de Evaluación:
+• Reporte exportado de la aplicación
+• Presentación oral del diagnóstico
+• Reflexión escrita sobre el proceso
+• Evaluación entre pares de los planes
+
+================================================================================
+
+13. RECOMENDACIONES PRÁCTICAS
+
+Para Estudiantes:
+• Empieza con datos de ejemplo para familiarizarte
+• Toma notas de tus observaciones
+• Discute con compañeros tus hallazgos
+• Reflexiona sobre la aplicación práctica
+
+Para Profesores:
+• Facilita la discusión después de cada sección
+• Conecta la simulación con casos reales
+• Promueve la reflexión crítica
+• Evalúa el proceso más que solo los resultados
+
+Plan de Clase Sugerido:
+
+Sesión 1: Introducción (30 min)
+• Presentar el MAIS y su importancia
+• Demostrar la aplicación con datos de ejemplo
+• Explicar la navegación y funcionalidades
+
+Sesión 2: Práctica Guiada (60 min)
+• Trabajar en grupos de 2-3 estudiantes
+• Completar las primeras 4 secciones
+• Discutir hallazgos en plenario
+
+Sesión 3: Análisis y Planificación (60 min)
+• Completar diagnóstico y plan de intervención
+• Presentar resultados por grupos
+• Discutir diferencias entre sectores
+
+Sesión 4: Evaluación y Cierre (30 min)
+• Exportar reportes finales
+• Reflexión grupal sobre el aprendizaje
+• Evaluación del proceso
+
+================================================================================
+
+14. GLOSARIO DE TÉRMINOS
+
+MAIS: Modelo de Atención Integral de Salud
+APS: Atención Primaria de Salud
+TENS: Técnico en Enfermería de Nivel Superior
+CESFAM: Centro de Salud Familiar
+
+Sectorización: División del territorio en áreas geográficas para la atención de salud
+Equipo de Cabecera: Grupo de profesionales asignados a un sector específico
+Microárea: Unidad básica de atención dentro de un sector
+Riesgo Social: Factores de vulnerabilidad relacionados con condiciones sociales
+Riesgo Sanitario: Factores de riesgo relacionados con la salud individual y familiar
+Diagnóstico Comunitario: Análisis integral de la situación de salud de una comunidad
+Trabajo en Red: Coordinación con instituciones y organizaciones comunitarias
+Plan de Intervención: Programación de actividades para abordar problemas identificados
+
+================================================================================
+
+CONSEJOS PARA EL ÉXITO
+
+• Lee cada sección completamente antes de empezar
+• Usa los datos de ejemplo para entender el funcionamiento
+• Toma tiempo para reflexionar sobre cada pregunta
+• Discute tus hallazgos con compañeros
+• Exporta tus resultados para revisión posterior
+• Mantén un registro de tus observaciones
+
+¡RECUERDA!
+El aprendizaje es un proceso continuo. Cada experiencia te ayudará a mejorar tus habilidades profesionales en atención primaria de salud.
+
+¡Disfruta explorando y aprendiendo el Modelo MAIS!
+
+================================================================================
+
+FIN DE LA GUÍA
+
+Esta guía fue diseñada para estudiantes TENS del curso "Salud Familiar y Comunitaria" 
+como herramienta de apoyo para el aprendizaje del Modelo MAIS a través de simulación práctica.
+
+Fecha de creación: Julio 2024
+Versión: 1.0 

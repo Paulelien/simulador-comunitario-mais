@@ -1,4 +1,10 @@
-# 🏥 Simulador Comunitario - Salud Familiar y Comunitaria
+# 🏥 Simulador Comunitario MAIS
+
+**Aplicación educativa desarrollada por Ricardo Delannoy Suazo para formación en diagnóstico comunitario en salud familiar.**
+
+Herramienta de aprendizaje interactiva para estudiantes TENS en el área de Salud Familiar y Comunitaria, basada en el Modelo de Atención Integral en Salud (MAIS).
+
+---
 
 ## 📋 Descripción
 
@@ -218,17 +224,27 @@ Para reportar problemas o solicitar mejoras:
 3. Describir el problema detalladamente
 4. Adjuntar capturas de pantalla si es necesario
 
-## 📄 Licencia
+## 📄 Derechos de Autor
 
-Este proyecto está desarrollado para fines educativos en el contexto del curso "Salud Familiar y Comunitaria".
-
-## 🙏 Agradecimientos
-
-- Equipo docente del curso TENS
-- Estudiantes que participaron en las pruebas
-- Comunidad de Streamlit por el framework
-- Contribuidores de las librerías utilizadas
+Este proyecto es de autoría propia con todos los derechos reservados.
 
 ---
 
-**Desarrollado para el curso "Salud Familiar y Comunitaria" - Modelo MAIS** 
+## 👨‍💻 Autor
+
+**Ricardo Delannoy Suazo**
+
+- **Proyecto:** Simulador Comunitario MAIS
+- **Año:** 2025
+- **Propósito:** Herramienta de aprendizaje para TENS
+- **Enfoque:** Modelo MAIS - Atención Primaria en Salud
+
+### 📧 Contacto
+
+Para consultas sobre el proyecto educativo, puedes contactar al autor a través de tu institución educativa.
+
+---
+
+**© 2025. Todos los derechos reservados.**
+
+*Este simulador está diseñado específicamente para uso educativo en el contexto de formación de Técnicos en Enfermería de Nivel Superior (TENS) en Chile.* 
