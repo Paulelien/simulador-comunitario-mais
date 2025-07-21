@@ -90,12 +90,18 @@ Aplicación web interactiva desarrollada con Streamlit para estudiantes TENS del
 - **Análisis de red**: Fortalezas y oportunidades
 - **Coordinación intersectorial**: Mapeo de actores clave
 
-### 7. 📋 Plan de Intervención
+### 7. 🏘️ Participación Comunitaria
+- **Encuestas comunitarias**: Satisfacción, necesidades, participación
+- **Grupos focales**: Discusiones profundas sobre temas específicos
+- **Análisis FODA**: Fortalezas, Oportunidades, Debilidades, Amenazas
+- **Plan anual**: Diseño de intervenciones basado en evidencia
+
+### 8. 📋 Plan de Intervención
 - **Crear actividades**: Objetivos, responsables, cronograma
 - **Recursos necesarios**: Presupuesto y materiales
 - **Indicadores de evaluación**: Medición de resultados
 
-### 8. 📊 Evaluación
+### 9. 📊 Evaluación
 - **Autoevaluación**: Reflexión sobre el proceso de aprendizaje
 - **Exportación de datos**: PDF, Excel, JSON
 - **Recomendaciones finales**: Mejoras y próximos pasos
@@ -117,6 +123,8 @@ Aplicación web interactiva desarrollada con Streamlit para estudiantes TENS del
 - ✅ Exportación en múltiples formatos
 - ✅ Autoevaluación del proceso
 - ✅ Navegación guiada por pasos
+- ✅ Participación comunitaria y análisis FODA
+- ✅ Diseño de plan anual de intervenciones
 
 ## 📊 Estructura de Datos
 

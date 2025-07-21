@@ -21,6 +21,8 @@ from diagnostico import mostrar_diagnostico
 from trabajo_red import mostrar_trabajo_red
 from plan_intervencion import mostrar_plan_intervencion
 from evaluacion import mostrar_evaluacion
+from participacion_comunitaria import mostrar_participacion_comunitaria
+from epidemiologia import mostrar_epidemiologia
 from datos_ejemplo import cargar_datos_ejemplo
 
 # Configuración de la página
@@ -93,7 +95,7 @@ def main():
     
     # Menú de navegación
     menu = ["🏠 Inicio", "🗺️ Sectorización", "👥 Equipo de Cabecera", "👨‍👩‍👧‍👦 Registro de Familias", 
-            "🔍 Diagnóstico", "🌐 Trabajo en Red", "📋 Plan de Intervención", "📊 Evaluación"]
+            "🔍 Diagnóstico", "🌐 Trabajo en Red", "🏘️ Participación Comunitaria", "🦠 Epidemiología", "📋 Plan de Intervención", "📊 Evaluación"]
     
     choice = st.sidebar.selectbox("Navegación", menu)
     
@@ -109,6 +111,10 @@ def main():
         mostrar_diagnostico()
     elif choice == "🌐 Trabajo en Red":
         mostrar_trabajo_red()
+    elif choice == "🏘️ Participación Comunitaria":
+        mostrar_participacion_comunitaria()
+    elif choice == "🦠 Epidemiología":
+        mostrar_epidemiologia()
     elif choice == "📋 Plan de Intervención":
         mostrar_plan_intervencion()
     elif choice == "📊 Evaluación":
@@ -158,7 +164,9 @@ def mostrar_inicio():
         3. **Registro de familias**: Capturar información familiar relevante
         4. **Identificación de riesgos**: Detectar factores de riesgo y protectores
         5. **Trabajo en red**: Coordinar con instituciones comunitarias
-        6. **Plan de intervención**: Diseñar estrategias de intervención
+        6. **Participación comunitaria**: Encuestas, grupos focales y análisis FODA
+        7. **Epidemiología**: Indicadores, patologías prioritarias y vigilancia
+        8. **Plan de intervención**: Diseñar estrategias de intervención
         
         ### 🚀 Cómo usar el simulador
         
@@ -173,7 +181,7 @@ def mostrar_inicio():
         """)
         
         # Mostrar progreso
-        total_pasos = 7
+        total_pasos = 9
         pasos_completados = 0
         
         if st.session_state.sectores:
@@ -183,6 +191,10 @@ def mostrar_inicio():
         if st.session_state.familias:
             pasos_completados += 1
         if st.session_state.instituciones:
+            pasos_completados += 1
+        if 'participacion_comunitaria' in st.session_state and st.session_state.participacion_comunitaria['encuestas']:
+            pasos_completados += 1
+        if 'epidemiologia' in st.session_state and st.session_state.epidemiologia['indicadores_basicos']:
             pasos_completados += 1
         if st.session_state.plan_intervencion:
             pasos_completados += 1

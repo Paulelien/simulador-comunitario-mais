@@ -443,6 +443,351 @@ PLAN_INTERVENCION_EJEMPLO = [
     }
 ]
 
+# Datos de ejemplo para participación comunitaria
+PARTICIPACION_COMUNITARIA_EJEMPLO = {
+    'encuestas': [
+        {
+            'id': 1,
+            'tipo': 'Satisfacción de Usuarios',
+            'fecha': '2024-01-15',
+            'sector': 'Todos los Sectores',
+            'num_encuestados': 85,
+            'metodo': 'Presencial',
+            'duracion': 12,
+            'satisfaccion': 4,
+            'participacion': 3,
+            'necesidades': ['Salud Mental', 'Salud Cardiovascular', 'Salud Infantil'],
+            'barreras': ['Horarios de Atención', 'Tiempo de Espera', 'Falta de Especialistas'],
+            'observaciones': 'Los usuarios valoran positivamente la atención del personal, pero identifican barreras en horarios y tiempo de espera. Interés moderado en participación comunitaria.'
+        },
+        {
+            'id': 2,
+            'tipo': 'Necesidades de Salud',
+            'fecha': '2024-01-18',
+            'sector': 'Sector A',
+            'num_encuestados': 45,
+            'metodo': 'Telefónica',
+            'duracion': 8,
+            'satisfaccion': 3,
+            'participacion': 4,
+            'necesidades': ['Salud del Adulto Mayor', 'Prevención de Cáncer', 'Salud Sexual y Reproductiva'],
+            'barreras': ['Distancia', 'Problemas de Transporte', 'Falta de Información'],
+            'observaciones': 'Alto interés en programas preventivos, especialmente para adultos mayores. Barreras de acceso geográfico identificadas.'
+        }
+    ],
+    'grupos_focales': [
+        {
+            'id': 1,
+            'tema': 'Necesidades de Salud Mental',
+            'fecha': '2024-01-20',
+            'participantes': 12,
+            'perfil': 'Usuarios del CESFAM',
+            'duracion': 2.0,
+            'facilitador': 'Psicóloga María González',
+            'preguntas': [
+                '¿Qué problemas de salud mental son más frecuentes en la comunidad?',
+                '¿Qué barreras identifican para acceder a atención en salud mental?',
+                '¿Cómo les gustaría que se aborden estos problemas?',
+                '¿Qué rol debería tener la comunidad en la promoción de salud mental?'
+            ],
+            'hallazgos_positivos': 'Alto interés en talleres de manejo del estrés y ansiedad. Reconocimiento de la importancia de la salud mental.',
+            'hallazgos_negativos': 'Estigma hacia problemas de salud mental. Falta de especialistas en el CESFAM.',
+            'recomendaciones': 'Implementar talleres grupales, capacitar al equipo en primeros auxilios psicológicos, coordinar con especialistas externos.',
+            'participacion': 4,
+            'satisfaccion': 5
+        }
+    ],
+    'analisis_foda': {
+        'fortalezas': [
+            {
+                'id': 1,
+                'elemento': 'Programa Cardiovascular Consolidado',
+                'descripcion': 'Programa bien establecido con buenos resultados y alta participación de usuarios',
+                'impacto': 'Alto',
+                'prioridad': 'Alta',
+                'sector': 'CESFAM'
+            },
+            {
+                'id': 2,
+                'elemento': 'Equipo Multidisciplinario',
+                'descripcion': 'Personal capacitado y comprometido con el trabajo comunitario',
+                'impacto': 'Alto',
+                'prioridad': 'Alta',
+                'sector': 'CESFAM'
+            },
+            {
+                'id': 3,
+                'elemento': 'Líderes Comunitarios Activos',
+                'descripcion': 'Comunidad organizada con líderes comprometidos con la salud',
+                'impacto': 'Medio',
+                'prioridad': 'Media',
+                'sector': 'Comunidad'
+            }
+        ],
+        'oportunidades': [
+            {
+                'id': 1,
+                'elemento': 'Fondo de Desarrollo Regional',
+                'descripcion': 'Disponibilidad de recursos para proyectos de salud comunitaria',
+                'impacto': 'Alto',
+                'prioridad': 'Alta',
+                'sector': 'Ambos'
+            },
+            {
+                'id': 2,
+                'elemento': 'Alianza con Universidad Local',
+                'descripcion': 'Posibilidad de investigación y capacitación conjunta',
+                'impacto': 'Medio',
+                'prioridad': 'Media',
+                'sector': 'CESFAM'
+            }
+        ],
+        'debilidades': [
+            {
+                'id': 1,
+                'elemento': 'Escasez de Horas de Especialistas',
+                'descripcion': 'Limitada disponibilidad de especialistas para control de complicaciones',
+                'impacto': 'Alto',
+                'prioridad': 'Alta',
+                'sector': 'CESFAM'
+            },
+            {
+                'id': 2,
+                'elemento': 'Infraestructura Limitada',
+                'descripcion': 'Espacios insuficientes para actividades grupales y talleres',
+                'impacto': 'Medio',
+                'prioridad': 'Media',
+                'sector': 'CESFAM'
+            },
+            {
+                'id': 3,
+                'elemento': 'Baja Participación de Hombres',
+                'descripcion': 'Menor participación masculina en actividades preventivas',
+                'impacto': 'Medio',
+                'prioridad': 'Media',
+                'sector': 'Comunidad'
+            }
+        ],
+        'amenazas': [
+            {
+                'id': 1,
+                'elemento': 'Recorte Presupuestario',
+                'descripcion': 'Posible reducción de recursos para programas comunitarios',
+                'impacto': 'Alto',
+                'prioridad': 'Alta',
+                'sector': 'CESFAM'
+            },
+            {
+                'id': 2,
+                'elemento': 'Cambio de Autoridades',
+                'descripcion': 'Riesgo de cambio de prioridades con nueva gestión municipal',
+                'impacto': 'Medio',
+                'prioridad': 'Media',
+                'sector': 'Ambos'
+            }
+        ]
+    },
+    'plan_anual': [
+        {
+            'id': 1,
+            'nombre': 'Programa de Salud Mental Comunitaria',
+            'tipo': 'Preventiva',
+            'objetivo': 'Mejorar el acceso y la calidad de la atención en salud mental',
+            'sector': 'Todos los Sectores',
+            'poblacion': 'Toda la Comunidad',
+            'prioridad': 'Alta',
+            'fecha_inicio': '2024-03-01',
+            'fecha_fin': '2024-12-31',
+            'frecuencia': 'Semanal',
+            'responsable': 'Psicóloga María González',
+            'equipo': 'Equipo de Salud Mental, TENS, Líderes Comunitarios',
+            'recursos': 'Sala de talleres, materiales educativos, presupuesto para especialistas',
+            'presupuesto': 1500000,
+            'indicadores': 'Número de talleres realizados, participantes, satisfacción, reducción de síntomas de ansiedad',
+            'fortalezas': ['Equipo Multidisciplinario'],
+            'debilidades': ['Escasez de Horas de Especialistas'],
+            'oportunidades': ['Fondo de Desarrollo Regional'],
+            'amenazas': ['Recorte Presupuestario']
+        },
+        {
+            'id': 2,
+            'nombre': 'Mejora de Infraestructura para Actividades Grupales',
+            'tipo': 'Promocional',
+            'objetivo': 'Ampliar espacios para actividades comunitarias y talleres',
+            'sector': 'Todos los Sectores',
+            'poblacion': 'Toda la Comunidad',
+            'prioridad': 'Media',
+            'fecha_inicio': '2024-04-01',
+            'fecha_fin': '2024-08-31',
+            'frecuencia': 'Una vez',
+            'responsable': 'Administrador CESFAM',
+            'equipo': 'Equipo Administrativo, Técnicos',
+            'recursos': 'Presupuesto municipal, materiales de construcción',
+            'presupuesto': 3000000,
+            'indicadores': 'Espacios habilitados, capacidad de usuarios, satisfacción',
+            'fortalezas': ['Programa Cardiovascular Consolidado'],
+            'debilidades': ['Infraestructura Limitada'],
+            'oportunidades': ['Fondo de Desarrollo Regional'],
+            'amenazas': ['Recorte Presupuestario']
+        }
+    ]
+}
+
+# Datos de ejemplo para epidemiología
+EPIDEMIOLOGIA_EJEMPLO = {
+    'indicadores_basicos': [
+        {
+            'id': 1,
+            'tipo': 'Morbilidad',
+            'fecha': '2024-01-15',
+            'sector': 'Todos los Sectores',
+            'periodo': 'Último mes',
+            'fuente': 'Fichas clínicas',
+            'observaciones': 'Alta incidencia de infecciones respiratorias en invierno',
+            'casos_nuevos': 45,
+            'casos_existentes': 120,
+            'poblacion_riesgo': 1000,
+            'incidencia': 45.0,
+            'prevalencia': 120.0
+        },
+        {
+            'id': 2,
+            'tipo': 'Mortalidad',
+            'fecha': '2024-01-20',
+            'sector': 'Todos los Sectores',
+            'periodo': 'Último año',
+            'fuente': 'Sistema de información',
+            'observaciones': 'Mortalidad principalmente por enfermedades cardiovasculares',
+            'defunciones': 8,
+            'poblacion_total': 1000,
+            'tasa_mortalidad': 8.0,
+            'causas': ['Enfermedades cardiovasculares', 'Cáncer']
+        },
+        {
+            'id': 3,
+            'tipo': 'Demográfico',
+            'fecha': '2024-01-25',
+            'sector': 'Todos los Sectores',
+            'periodo': 'Último año',
+            'fuente': 'Censo comunal',
+            'observaciones': 'Población envejecida con alto índice de dependencia',
+            'poblacion_total': 1000,
+            'menores_15': 180,
+            'mayores_65': 220,
+            'indice_dependencia': 40.0
+        }
+    ],
+    'patologias_prioritarias': [
+        {
+            'id': 1,
+            'patologia': 'Diabetes Mellitus',
+            'fecha': '2024-01-15',
+            'sector': 'Todos los Sectores',
+            'prioridad': 'Alta',
+            'tendencia': 'En aumento',
+            'casos_activos': 45,
+            'casos_nuevos': 8,
+            'poblacion': 1000,
+            'edad_promedio': 58,
+            'prevalencia': 45.0,
+            'incidencia_mensual': 8.0,
+            'factores_asociados': ['Obesidad', 'Sedentarismo', 'Mala alimentación'],
+            'intervenciones': ['Educación en salud', 'Control nutricional', 'Programa de ejercicio'],
+            'observaciones': 'Alta prevalencia en adultos mayores, necesidad de intervenciones preventivas'
+        },
+        {
+            'id': 2,
+            'patologia': 'Hipertensión Arterial',
+            'fecha': '2024-01-20',
+            'sector': 'Todos los Sectores',
+            'prioridad': 'Alta',
+            'tendencia': 'Estable',
+            'casos_activos': 65,
+            'casos_nuevos': 5,
+            'poblacion': 1000,
+            'edad_promedio': 62,
+            'prevalencia': 65.0,
+            'incidencia_mensual': 5.0,
+            'factores_asociados': ['Obesidad', 'Estrés', 'Mala alimentación'],
+            'intervenciones': ['Control médico regular', 'Educación en salud', 'Apoyo psicológico'],
+            'observaciones': 'Patología más frecuente en la población, buen control en la mayoría de casos'
+        }
+    ],
+    'vigilancia_epidemiologica': [
+        {
+            'id': 1,
+            'evento': 'Infección Respiratoria',
+            'fecha_inicio': '2024-01-01',
+            'fecha_fin': '2024-01-31',
+            'nivel_alerta': 'Atención',
+            'sector': 'Todos los Sectores',
+            'casos_sospechosos': 25,
+            'casos_confirmados': 15,
+            'casos_graves': 2,
+            'defunciones': 0,
+            'poblacion_expuesta': 1000,
+            'tasa_ataque': 1.5,
+            'grupo_edad': ['0-4 años', '5-14 años'],
+            'sintomas': ['Fiebre', 'Tos', 'Dolor de cabeza'],
+            'factores_riesgo': ['Hacinamiento', 'Contacto con enfermos'],
+            'acciones': ['Educación comunitaria', 'Refuerzo de medidas preventivas'],
+            'observaciones': 'Aumento estacional esperado, casos leves en su mayoría'
+        }
+    ],
+    'factores_riesgo': [
+        {
+            'id': 1,
+            'factor': 'Obesidad',
+            'fecha': '2024-01-15',
+            'sector': 'Todos los Sectores',
+            'nivel_riesgo': 'Alto',
+            'tendencia': 'En aumento',
+            'prevalencia': 35.0,
+            'poblacion_expuesta': 350,
+            'edad_promedio': 45,
+            'genero': 'Ambos',
+            'impacto_poblacional': 350,
+            'patologias_asociadas': ['Diabetes', 'Hipertensión', 'Enfermedades cardiovasculares'],
+            'intervenciones': ['Educación en salud', 'Programa de ejercicio', 'Apoyo nutricional'],
+            'observaciones': 'Factor de riesgo más prevalente, requiere intervención multisectorial'
+        },
+        {
+            'id': 2,
+            'factor': 'Sedentarismo',
+            'fecha': '2024-01-20',
+            'sector': 'Todos los Sectores',
+            'nivel_riesgo': 'Medio',
+            'tendencia': 'Estable',
+            'prevalencia': 60.0,
+            'poblacion_expuesta': 600,
+            'edad_promedio': 40,
+            'genero': 'Hombres',
+            'impacto_poblacional': 600,
+            'patologias_asociadas': ['Obesidad', 'Enfermedades cardiovasculares'],
+            'intervenciones': ['Programa de ejercicio', 'Educación en salud'],
+            'observaciones': 'Alta prevalencia, especialmente en población económicamente activa'
+        }
+    ],
+    'analisis_geografico': [
+        {
+            'id': 1,
+            'evento': 'Diabetes',
+            'fecha': '2024-01-25',
+            'tipo_analisis': 'Prevalencia',
+            'unidad_geografica': 'Sector',
+            'periodo': 'Último año',
+            'sector_a': {'casos': 18, 'poblacion': 300, 'tasa': 60.0},
+            'sector_b': {'casos': 15, 'poblacion': 400, 'tasa': 37.5},
+            'sector_c': {'casos': 12, 'poblacion': 300, 'tasa': 40.0},
+            'cluster': 'Sí',
+            'caracteristicas_cluster': 'Mayor prevalencia en Sector A, población más envejecida',
+            'factores_cluster': ['Pobreza', 'Bajo nivel educacional'],
+            'intervenciones': ['Focalización en sector específico', 'Educación comunitaria'],
+            'observaciones': 'Cluster identificado en Sector A, requiere intervención focalizada'
+        }
+    ]
+}
+
 # Datos de ejemplo para autoevaluación
 AUTOEVALUACION_EJEMPLO = {
     "comprension_conceptos": 4,
@@ -481,6 +826,12 @@ def cargar_datos_ejemplo():
         
         # Cargar plan de intervención
         st.session_state.plan_intervencion = PLAN_INTERVENCION_EJEMPLO.copy()
+        
+        # Cargar participación comunitaria
+        st.session_state.participacion_comunitaria = PARTICIPACION_COMUNITARIA_EJEMPLO.copy()
+        
+        # Cargar epidemiología
+        st.session_state.epidemiologia = EPIDEMIOLOGIA_EJEMPLO.copy()
         
         # Cargar autoevaluación
         st.session_state.autoevaluacion = AUTOEVALUACION_EJEMPLO.copy()
