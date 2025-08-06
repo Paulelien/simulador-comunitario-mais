@@ -79,9 +79,17 @@ def mostrar_plan_intervencion():
         
         # Objetivos específicos
         st.markdown("**Objetivos Específicos:**")
+        
+        # Inicializar contadores si no existen
+        if 'num_objetivos' not in st.session_state:
+            st.session_state.num_objetivos = 1
+        if 'num_actividades' not in st.session_state:
+            st.session_state.num_actividades = 1
+        
         objetivos_especificos = []
         
-        for i in range(3):
+        # Mostrar objetivos existentes
+        for i in range(st.session_state.num_objetivos):
             objetivo = st.text_input(
                 f"Objetivo Específico {i+1}",
                 placeholder=f"Objetivo específico {i+1}...",
@@ -90,11 +98,25 @@ def mostrar_plan_intervencion():
             if objetivo:
                 objetivos_especificos.append(objetivo)
         
+        # Botón para agregar objetivo
+        col1, col2 = st.columns([1, 4])
+        with col1:
+            if st.button("➕ Agregar Objetivo", key="agregar_objetivo"):
+                st.session_state.num_objetivos += 1
+                st.rerun()
+        
+        with col2:
+            if st.session_state.num_objetivos > 1:
+                if st.button("➖ Quitar Último Objetivo", key="quitar_objetivo"):
+                    st.session_state.num_objetivos -= 1
+                    st.rerun()
+        
         # Actividades específicas
         st.markdown("**Actividades Específicas:**")
         actividades_especificas = []
         
-        for i in range(5):
+        # Mostrar actividades existentes
+        for i in range(st.session_state.num_actividades):
             actividad = st.text_input(
                 f"Actividad {i+1}",
                 placeholder=f"Descripción de la actividad {i+1}...",
@@ -102,6 +124,19 @@ def mostrar_plan_intervencion():
             )
             if actividad:
                 actividades_especificas.append(actividad)
+        
+        # Botón para agregar actividad
+        col1, col2 = st.columns([1, 4])
+        with col1:
+            if st.button("➕ Agregar Actividad", key="agregar_actividad"):
+                st.session_state.num_actividades += 1
+                st.rerun()
+        
+        with col2:
+            if st.session_state.num_actividades > 1:
+                if st.button("➖ Quitar Última Actividad", key="quitar_actividad"):
+                    st.session_state.num_actividades -= 1
+                    st.rerun()
         
         # Responsables y recursos
         st.markdown("**Responsables y Recursos:**")
@@ -151,9 +186,15 @@ def mostrar_plan_intervencion():
         
         # Indicadores de evaluación
         st.markdown("**Indicadores de Evaluación:**")
+        
+        # Inicializar contador de indicadores si no existe
+        if 'num_indicadores' not in st.session_state:
+            st.session_state.num_indicadores = 1
+        
         indicadores = []
         
-        for i in range(3):
+        # Mostrar indicadores existentes
+        for i in range(st.session_state.num_indicadores):
             indicador = st.text_input(
                 f"Indicador {i+1}",
                 placeholder=f"Indicador de evaluación {i+1}...",
@@ -161,6 +202,19 @@ def mostrar_plan_intervencion():
             )
             if indicador:
                 indicadores.append(indicador)
+        
+        # Botón para agregar indicador
+        col1, col2 = st.columns([1, 4])
+        with col1:
+            if st.button("➕ Agregar Indicador", key="agregar_indicador"):
+                st.session_state.num_indicadores += 1
+                st.rerun()
+        
+        with col2:
+            if st.session_state.num_indicadores > 1:
+                if st.button("➖ Quitar Último Indicador", key="quitar_indicador"):
+                    st.session_state.num_indicadores -= 1
+                    st.rerun()
         
         # Metas
         st.markdown("**Metas:**")
@@ -185,40 +239,58 @@ def mostrar_plan_intervencion():
             placeholder="Riesgos identificados y medidas de contingencia..."
         )
         
-        if st.button("💾 Guardar Actividad", type="primary"):
-            if nombre_actividad and objetivo_general:
-                nueva_actividad = {
-                    "nombre": nombre_actividad,
-                    "tipo": tipo_actividad,
-                    "objetivo_general": objetivo_general,
-                    "sectores_objetivo": sector_objetivo,
-                    "poblacion_objetivo": poblacion_objetivo,
-                    "objetivos_especificos": objetivos_especificos,
-                    "actividades_especificas": actividades_especificas,
-                    "responsables": responsables,
-                    "instituciones_participantes": instituciones_participantes,
-                    "recursos_necesarios": recursos_necesarios,
-                    "presupuesto_estimado": presupuesto_estimado,
-                    "cronograma": {
-                        "fecha_inicio": fecha_inicio.strftime("%Y-%m-%d"),
-                        "fecha_fin": fecha_fin.strftime("%Y-%m-%d"),
-                        "frecuencia": frecuencia
-                    },
-                    "indicadores": indicadores,
-                    "metas": {
-                        "cuantitativa": meta_cuantitativa,
-                        "cualitativa": meta_cualitativa
-                    },
-                    "riesgos_contingencias": riesgos_contingencias,
-                    "fecha_creacion": datetime.now().strftime("%Y-%m-%d %H:%M"),
-                    "estado": "Planificada"
-                }
-                
-                st.session_state.plan_intervencion.append(nueva_actividad)
-                st.success(f"✅ Actividad '{nombre_actividad}' agregada al plan de intervención!")
+        # Botones de acción
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            if st.button("💾 Guardar Actividad", type="primary"):
+                if nombre_actividad and objetivo_general:
+                    nueva_actividad = {
+                        "nombre": nombre_actividad,
+                        "tipo": tipo_actividad,
+                        "objetivo_general": objetivo_general,
+                        "sectores_objetivo": sector_objetivo,
+                        "poblacion_objetivo": poblacion_objetivo,
+                        "objetivos_especificos": objetivos_especificos,
+                        "actividades_especificas": actividades_especificas,
+                        "responsables": responsables,
+                        "instituciones_participantes": instituciones_participantes,
+                        "recursos_necesarios": recursos_necesarios,
+                        "presupuesto_estimado": presupuesto_estimado,
+                        "cronograma": {
+                            "fecha_inicio": fecha_inicio.strftime("%Y-%m-%d"),
+                            "fecha_fin": fecha_fin.strftime("%Y-%m-%d"),
+                            "frecuencia": frecuencia
+                        },
+                        "indicadores": indicadores,
+                        "metas": {
+                            "cuantitativa": meta_cuantitativa,
+                            "cualitativa": meta_cualitativa
+                        },
+                        "riesgos_contingencias": riesgos_contingencias,
+                        "fecha_creacion": datetime.now().strftime("%Y-%m-%d %H:%M"),
+                        "estado": "Planificada"
+                    }
+                    
+                    st.session_state.plan_intervencion.append(nueva_actividad)
+                    st.success(f"✅ Actividad '{nombre_actividad}' agregada al plan de intervención!")
+                    
+                    # Resetear contadores después de guardar
+                    st.session_state.num_objetivos = 1
+                    st.session_state.num_actividades = 1
+                    st.session_state.num_indicadores = 1
+                    
+                    st.rerun()
+                else:
+                    st.error("❌ Por favor completa los campos obligatorios (nombre y objetivo general)")
+        
+        with col2:
+            if st.button("🧹 Limpiar Formulario", type="secondary"):
+                # Resetear contadores
+                st.session_state.num_objetivos = 1
+                st.session_state.num_actividades = 1
+                st.session_state.num_indicadores = 1
                 st.rerun()
-            else:
-                st.error("❌ Por favor completa los campos obligatorios (nombre y objetivo general)")
     
     # Mostrar plan de intervención
     if st.session_state.plan_intervencion:

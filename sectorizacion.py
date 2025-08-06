@@ -141,43 +141,7 @@ def mostrar_sectorizacion():
             )
             st.plotly_chart(fig_vulnerabilidad, use_container_width=True)
         
-        # Mapa esquemático (simulado)
-        st.markdown("### 🗺️ Mapa Esquemático de Sectores")
-        
-        # Crear un mapa simple con plotly
-        fig_mapa = go.Figure()
-        
-        # Simular posiciones de sectores
-        for i, sector in enumerate(st.session_state.sectores):
-            x = i * 2
-            y = 0
-            
-            # Color según vulnerabilidad
-            color_map = {"Baja": "green", "Media": "yellow", "Alta": "orange", "Crítica": "red"}
-            color = color_map.get(sector["vulnerabilidad"], "blue")
-            
-            fig_mapa.add_trace(go.Scatter(
-                x=[x], y=[y],
-                mode='markers+text',
-                marker=dict(size=20, color=color),
-                text=sector["nombre"],
-                textposition="top center",
-                name=sector["nombre"],
-                hovertemplate=f"<b>{sector['nombre']}</b><br>" +
-                             f"Población: {sector['poblacion_total']}<br>" +
-                             f"Familias: {sector['num_familias']}<br>" +
-                             f"Vulnerabilidad: {sector['vulnerabilidad']}<extra></extra>"
-            ))
-        
-        fig_mapa.update_layout(
-            title="Distribución Geográfica de Sectores",
-            xaxis_title="",
-            yaxis_title="",
-            showlegend=False,
-            height=400
-        )
-        
-        st.plotly_chart(fig_mapa, use_container_width=True)
+
         
         # Resumen estadístico
         st.markdown("### 📈 Resumen Estadístico")

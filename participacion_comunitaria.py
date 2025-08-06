@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from datetime import datetime, timedelta
+from datetime import datetime
+from sistema_inteligente import generar_recomendaciones_personalizadas, timedelta
 import json
 
 def mostrar_participacion_comunitaria():
@@ -426,6 +427,86 @@ def mostrar_plan_anual():
     st.header("📋 Plan Anual de Intervenciones")
     st.markdown("**Objetivo:** Diseñar un plan anual basado en el análisis FODA y la participación comunitaria.")
     
+    # Sistema Inteligente - Generar recomendaciones automáticas
+    if st.button("🤖 Generar Sugerencias Inteligentes", key="generar_sugerencias"):
+        with st.spinner("Analizando datos de la comunidad..."):
+            recomendaciones = generar_recomendaciones_personalizadas()
+            
+            # Mostrar diagnóstico inteligente
+            st.subheader("🔍 Diagnóstico Inteligente de la Comunidad")
+            
+            if recomendaciones['diagnostico']['problemas_prioritarios']:
+                st.success("✅ Problemas prioritarios identificados:")
+                for problema in recomendaciones['diagnostico']['problemas_prioritarios']:
+                    st.write(f"• **{problema['problema'].title()}**: {problema['cantidad']} familias ({problema['porcentaje']:.1f}%)")
+            else:
+                st.info("ℹ️ No se identificaron problemas prioritarios (menos del 30% de prevalencia)")
+            
+            if recomendaciones['diagnostico']['poblaciones_vulnerables']:
+                st.warning("⚠️ Poblaciones vulnerables identificadas:")
+                for poblacion in recomendaciones['diagnostico']['poblaciones_vulnerables']:
+                    st.write(f"• {poblacion}")
+            
+            if recomendaciones['diagnostico']['fortalezas_comunitarias']:
+                st.success("💪 Fortalezas comunitarias identificadas:")
+                for fortaleza in set(recomendaciones['diagnostico']['fortalezas_comunitarias']):
+                    st.write(f"• {fortaleza}")
+            
+            # Mostrar sugerencias de intervenciones
+            if recomendaciones['sugerencias']:
+                st.subheader("🎯 Sugerencias de Intervenciones")
+                st.info(f"Se generaron {len(recomendaciones['sugerencias'])} sugerencias basadas en el análisis de datos")
+                
+                for i, sugerencia in enumerate(recomendaciones['sugerencias']):
+                    with st.expander(f"📋 {sugerencia['nombre']} ({sugerencia['tipo']})", expanded=False):
+                        col1, col2 = st.columns(2)
+                        
+                        with col1:
+                            st.write(f"**Objetivo:** {sugerencia['objetivo']}")
+                            st.write(f"**Población objetivo:** {sugerencia['poblacion']}")
+                            st.write(f"**Duración:** {sugerencia['duracion']}")
+                            st.write(f"**Frecuencia:** {sugerencia['frecuencia']}")
+                        
+                        with col2:
+                            st.write(f"**Recursos necesarios:** {sugerencia['recursos']}")
+                            st.write(f"**Indicadores:** {sugerencia['indicadores']}")
+                        
+                        st.write("**Actividades principales:**")
+                        for actividad in sugerencia['actividades']:
+                            st.write(f"• {actividad}")
+                        
+                        # Botón para agregar automáticamente al plan
+                        if st.button(f"➕ Agregar al Plan", key=f"agregar_sugerencia_{i}"):
+                            nueva_intervencion = {
+                                'id': len(st.session_state.participacion_comunitaria['plan_anual']) + 1,
+                                'nombre': sugerencia['nombre'],
+                                'tipo': sugerencia['tipo'],
+                                'objetivo': sugerencia['objetivo'],
+                                'sector': 'Todos los Sectores',
+                                'poblacion': sugerencia['poblacion'],
+                                'prioridad': 'Alta' if sugerencia['tipo'] == 'Preventiva' else 'Media',
+                                'fecha_inicio': datetime.now().strftime('%Y-%m-%d'),
+                                'fecha_fin': (datetime.now() + timedelta(days=180)).strftime('%Y-%m-%d'),
+                                'frecuencia': sugerencia['frecuencia'],
+                                'responsable': 'Equipo de Salud Familiar',
+                                'equipo': 'Médico, TENS, Matrona, Psicólogo',
+                                'recursos': sugerencia['recursos'],
+                                'presupuesto': 1000000,
+                                'indicadores': sugerencia['indicadores'],
+                                'fortalezas': [],
+                                'debilidades': [],
+                                'oportunidades': [],
+                                'amenazas': []
+                            }
+                            
+                            st.session_state.participacion_comunitaria['plan_anual'].append(nueva_intervencion)
+                            st.success("✅ Intervención agregada al plan anual")
+                            st.rerun()
+            else:
+                st.warning("⚠️ No se pudieron generar sugerencias. Asegúrate de tener datos suficientes registrados.")
+    
+    st.markdown("---")
+    
     # Formulario para nueva intervención
     with st.expander("➕ Agregar Nueva Intervención", expanded=True):
         col1, col2 = st.columns(2)
@@ -454,7 +535,7 @@ def mostrar_plan_anual():
                 key="poblacion_objetivo"
             )
             
-            prioridad = st.selectbox("Prioridad:", ["Alta", "Media", "Baja"], key="prioridad_intervencion")
+            prioridad = st.selectbox("Prioridad:", ["Alta", "Media", "Baja"], key="prioridad_intervencion_plan")
         
         # Cronograma
         st.subheader("📅 Cronograma")

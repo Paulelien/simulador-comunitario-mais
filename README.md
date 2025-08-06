@@ -1,258 +1,194 @@
-# 🏥 Simulador Comunitario MAIS
-
-**Aplicación educativa desarrollada por Ricardo Delannoy Suazo para formación en diagnóstico comunitario en salud familiar.**
-
-Herramienta de aprendizaje interactiva para estudiantes TENS en el área de Salud Familiar y Comunitaria, basada en el Modelo de Atención Integral en Salud (MAIS).
-
----
+# 🏥 Simulador Comunitario - Salud Familiar y Comunitaria
 
 ## 📋 Descripción
 
-Aplicación web interactiva desarrollada con Streamlit para estudiantes TENS del curso "Salud Familiar y Comunitaria". El simulador permite practicar el proceso completo de elaboración de un diagnóstico comunitario en APS (Atención Primaria en Salud) siguiendo el enfoque del Modelo de Atención Integral en Salud Familiar (MAIS).
+Aplicación educativa desarrollada para profesionales TENS (Técnicos en Enfermería de Nivel Superior) que permite practicar el proceso completo de elaboración de un **diagnóstico comunitario en Atención Primaria en Salud (APS)** siguiendo el **Modelo de Atención Integral en Salud Familiar (MAIS)**.
 
-## 🎯 Objetivos
+## 🎯 Objetivo
 
-- **Sectorización del territorio**: Organizar y delimitar áreas geográficas
-- **Formación de equipos de cabecera**: Asignar profesionales por sector
-- **Registro de familias**: Capturar información familiar relevante
-- **Identificación de factores de riesgo**: Detectar riesgos sociales y sanitarios
-- **Trabajo en red intersectorial**: Coordinar con instituciones comunitarias
-- **Plan de intervención**: Diseñar estrategias de intervención integral
+Esta aplicación te permitirá aprender y practicar:
+
+1. **Sectorización del territorio**: Organizar y delimitar áreas geográficas
+2. **Formación de equipos**: Asignar profesionales por sector
+3. **Registro de familias**: Capturar información familiar relevante
+4. **Identificación de riesgos**: Detectar factores de riesgo y protectores
+5. **Trabajo en red**: Coordinar con instituciones comunitarias
+6. **Participación comunitaria**: Encuestas, grupos focales y análisis FODA
+7. **Epidemiología**: Indicadores, patologías prioritarias y vigilancia
+8. **Plan de intervención**: Diseñar estrategias de intervención
+9. **Casos clínicos**: Analizar situaciones reales de la práctica
+10. **Telemedicina y TICS**: Implementar tecnologías para mejorar acceso en zonas rurales
+11. **Gestión Clínica APS**: Control de pacientes crónicos y educación en salud
+12. **Salud Mental Comunitaria**: Diagnóstico e intervención comunitaria
 
 ## 🚀 Instalación
 
 ### Requisitos Previos
-
 - Python 3.8 o superior
 - pip (gestor de paquetes de Python)
 
 ### Pasos de Instalación
 
-1. **Clonar o descargar el proyecto**
+1. **Clonar el repositorio**
    ```bash
-   git clone <url-del-repositorio>
-   cd simulador_comunitario
+   git clone https://github.com/tu-usuario/simulador-comunitario.git
+   cd simulador-comunitario
    ```
 
-2. **Crear entorno virtual (recomendado)**
-   ```bash
-   python -m venv venv
-   
-   # En Windows
-   venv\Scripts\activate
-   
-   # En macOS/Linux
-   source venv/bin/activate
-   ```
-
-3. **Instalar dependencias**
+2. **Instalar dependencias**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Ejecutar la aplicación**
+3. **Ejecutar la aplicación**
    ```bash
    streamlit run app.py
    ```
 
-5. **Abrir en el navegador**
-   La aplicación se abrirá automáticamente en `http://localhost:8501`
+4. **Acceder a la aplicación**
+   Abre tu navegador y ve a: `http://localhost:8501`
 
-## 📖 Cómo Usar el Simulador
+## 📱 Módulos Disponibles
 
-### 1. 🏠 Inicio
-- Bienvenida y objetivos del simulador
-- Información del curso
-- Progreso del diagnóstico
+### 🏠 Inicio
+- Bienvenida y progreso del diagnóstico
+- Guía contextual y consejos para TENS
+- Análisis inteligente rápido
 
-### 2. 🗺️ Sectorización
-- **Agregar sectores**: Define áreas geográficas con características específicas
-- **Características del territorio**: Servicios básicos, problemas identificados
-- **Visualización**: Gráficos y mapas esquemáticos de sectores
+### 🗺️ Sectorización
+- Delimitación territorial
+- Definición de límites comunitarios
+- Organización geográfica
 
-### 3. 👥 Equipo de Cabecera
-- **Asignar equipos**: Composición profesional por sector
-- **Microáreas**: Organización territorial
-- **Análisis de cobertura**: Ratios y recomendaciones
+### 👥 Equipo de Cabecera
+- Asignación de profesionales por sector
+- Roles y responsabilidades
+- Coordinación del equipo
 
-### 4. 👨‍👩‍👧‍👦 Registro de Familias
-- **Registrar familias**: Información demográfica y de salud
-- **Cálculo automático de riesgos**: Social y sanitario
-- **Análisis de vulnerabilidad**: Identificación de grupos prioritarios
+### 👨‍👩‍👧‍👦 Registro de Familias
+- Captura de datos familiares
+- Identificación de riesgos
+- Análisis demográfico
 
-### 5. 🔍 Diagnóstico
-- **Análisis de datos**: Interpretación de información recopilada
-- **Formulario de diagnóstico**: Preguntas orientadoras
-- **Identificación de problemas**: Priorización de intervenciones
+### 🔍 Diagnóstico
+- Análisis comunitario
+- Identificación de problemas prioritarios
+- Factores de riesgo y protectores
 
-### 6. 🌐 Trabajo en Red
-- **Registrar instituciones**: Organizaciones comunitarias disponibles
-- **Análisis de red**: Fortalezas y oportunidades
-- **Coordinación intersectorial**: Mapeo de actores clave
+### 🌐 Trabajo en Red
+- Coordinación intersectorial
+- Mapeo de instituciones
+- Alianzas estratégicas
 
-### 7. 🏘️ Participación Comunitaria
-- **Encuestas comunitarias**: Satisfacción, necesidades, participación
-- **Grupos focales**: Discusiones profundas sobre temas específicos
-- **Análisis FODA**: Fortalezas, Oportunidades, Debilidades, Amenazas
-- **Plan anual**: Diseño de intervenciones basado en evidencia
+### 🏘️ Participación Comunitaria
+- Involucramiento ciudadano
+- Encuestas comunitarias
+- Análisis FODA participativo
 
-### 8. 📋 Plan de Intervención
-- **Crear actividades**: Objetivos, responsables, cronograma
-- **Recursos necesarios**: Presupuesto y materiales
-- **Indicadores de evaluación**: Medición de resultados
+### 🦠 Epidemiología
+- Indicadores poblacionales
+- Patologías prioritarias
+- Vigilancia epidemiológica
 
-### 9. 📊 Evaluación
-- **Autoevaluación**: Reflexión sobre el proceso de aprendizaje
-- **Exportación de datos**: PDF, Excel, JSON
-- **Recomendaciones finales**: Mejoras y próximos pasos
+### 🧠 Salud Mental Comunitaria
+- Diagnóstico psicosocial
+- Intervenciones grupales
+- Redes de apoyo
 
-## 🛠️ Características Técnicas
+### 🏥 Gestión Clínica APS
+- Control de pacientes crónicos
+- Educación en salud
+- Seguimiento de tratamientos
+- Sistema de derivaciones
+- Indicadores clínicos
 
-### Tecnologías Utilizadas
-- **Streamlit**: Framework web para la interfaz
-- **Pandas**: Manipulación y análisis de datos
-- **Plotly**: Visualizaciones interactivas
-- **ReportLab**: Generación de PDFs
-- **OpenPyXL**: Exportación a Excel
+### 📋 Plan de Intervención
+- Estrategias de acción
+- Objetivos y metas
+- Cronograma de actividades
 
-### Funcionalidades Principales
-- ✅ Interfaz intuitiva y responsiva
-- ✅ Guardado automático de datos (Session State)
-- ✅ Cálculo automático de factores de riesgo
-- ✅ Visualizaciones interactivas
-- ✅ Exportación en múltiples formatos
-- ✅ Autoevaluación del proceso
-- ✅ Navegación guiada por pasos
-- ✅ Participación comunitaria y análisis FODA
-- ✅ Diseño de plan anual de intervenciones
+### 🏥 Casos Clínicos
+- Análisis de situaciones reales
+- Casos prácticos
+- Aprendizaje basado en problemas
 
-## 📊 Estructura de Datos
+### 📱 Telemedicina y TICS
+- Tecnologías para zonas rurales
+- Implementación de TICS
+- Mejora del acceso a la salud
 
-### Sectores
-```json
-{
-  "nombre": "Sector Norte",
-  "poblacion_total": 1000,
-  "num_familias": 250,
-  "tipo_territorio": "Urbano",
-  "nivel_socioeconomico": "Medio",
-  "vulnerabilidad": "Media",
-  "servicios": {...},
-  "problemas": [...]
-}
-```
+### 📊 Evaluación
+- Autoevaluación general
+- Evaluación MAIS oficial
+- Medición de competencias
 
-### Familias
-```json
-{
-  "sector": "Sector Norte",
-  "apellido": "González",
-  "num_integrantes": 4,
-  "jefe_hogar": {...},
-  "vivienda": {...},
-  "salud": {...},
-  "riesgos": {
-    "social": {"nivel": "Alto", "puntaje": 12},
-    "sanitario": {"nivel": "Medio", "puntaje": 6}
-  }
-}
-```
+## 🎓 Enfoque TENS
 
-### Plan de Intervención
-```json
-{
-  "nombre": "Taller de Prevención",
-  "tipo": "Educativa",
-  "objetivo_general": "...",
-  "responsables": ["TENS", "Enfermera"],
-  "cronograma": {...},
-  "indicadores": [...]
-}
-```
+Esta aplicación está diseñada específicamente para profesionales TENS con:
 
-## 🎓 Público Objetivo
+- **Enfoque en prevención**: Prioriza intervenciones preventivas
+- **Trabajo en equipo**: Coordina con otros profesionales
+- **Participación comunitaria**: Involucra a las familias en las decisiones
+- **Seguimiento**: Mantiene registro de las intervenciones
+- **Evaluación continua**: Mide el impacto de las acciones
 
-- **Estudiantes TENS**: Técnicos en Enfermería de Nivel Superior
-- **Curso**: Salud Familiar y Comunitaria
-- **Nivel**: Sin experiencia previa en plataformas digitales avanzadas
-- **Enfoque**: Modelo MAIS - Atención Primaria en Salud
+## 🔧 Tecnologías Utilizadas
 
-## 📁 Estructura del Proyecto
+- **Frontend**: Streamlit
+- **Backend**: Python
+- **Análisis de datos**: Pandas, Plotly
+- **Visualización**: Plotly Express, Plotly Graph Objects
+- **Reportes**: ReportLab
 
-```
-simulador_comunitario/
-├── app.py                 # Archivo principal de la aplicación
-├── requirements.txt       # Dependencias del proyecto
-├── README.md             # Documentación
-├── sectorizacion.py      # Módulo de sectorización
-├── equipo_cabecera.py    # Módulo de equipos de cabecera
-├── registro_familias.py  # Módulo de registro familiar
-├── diagnostico.py        # Módulo de diagnóstico
-├── trabajo_red.py        # Módulo de trabajo en red
-├── plan_intervencion.py  # Módulo de plan de intervención
-└── evaluacion.py         # Módulo de evaluación
-```
+## 📊 Características
 
-## 🔧 Personalización
+- ✅ **Interfaz intuitiva**: Fácil de usar para profesionales de la salud
+- ✅ **Validación de datos**: Verificación automática de información
+- ✅ **Análisis inteligente**: Recomendaciones personalizadas
+- ✅ **Reportes**: Exportación de datos en múltiples formatos
+- ✅ **Progreso**: Seguimiento del avance en el diagnóstico
+- ✅ **Responsive**: Funciona en diferentes dispositivos
 
-### Modificar Estilos CSS
-Los estilos se encuentran en el archivo `app.py` dentro de la sección `st.markdown(""<style>...")`.
+## 🚨 Alertas Importantes
 
-### Agregar Nuevos Campos
-Para agregar nuevos campos a los formularios, modifica los archivos de módulos correspondientes.
+- **Confidencialidad**: Protege siempre la información de las familias
+- **Derivación**: Identifica casos que requieren atención especializada
+- **Documentación**: Registra todas las intervenciones realizadas
+- **Redes de apoyo**: Fortalece las redes sociales de las familias
+- **Autocuidado**: No olvides tu propio bienestar
 
-### Cambiar Cálculos de Riesgo
-Los algoritmos de cálculo de riesgo se encuentran en `registro_familias.py` en las funciones:
-- `calcular_riesgo_social()`
-- `calcular_riesgo_sanitario()`
+## 🤝 Contribuciones
 
-## 🐛 Solución de Problemas
+Las contribuciones son bienvenidas. Por favor:
 
-### Error de Dependencias
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt --force-reinstall
-```
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-### Puerto Ocupado
-```bash
-streamlit run app.py --server.port 8502
-```
+## 📄 Licencia
 
-### Problemas de Memoria
-```bash
-streamlit run app.py --server.maxUploadSize 200
-```
-
-## 📞 Soporte
-
-Para reportar problemas o solicitar mejoras:
-1. Crear un issue en el repositorio
-2. Incluir información del sistema operativo
-3. Describir el problema detalladamente
-4. Adjuntar capturas de pantalla si es necesario
-
-## 📄 Derechos de Autor
-
-Este proyecto es de autoría propia con todos los derechos reservados.
-
----
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 ## 👨‍💻 Autor
 
 **Ricardo Delannoy Suazo**
+- Desarrollador de aplicaciones educativas en salud
+- Especialista en tecnologías para la formación en salud familiar
 
-- **Proyecto:** Simulador Comunitario MAIS
-- **Año:** 2025
-- **Propósito:** Herramienta de aprendizaje para TENS
-- **Enfoque:** Modelo MAIS - Atención Primaria en Salud
+## 📞 Contacto
 
-### 📧 Contacto
+- Email: [tu-email@ejemplo.com]
+- LinkedIn: [tu-linkedin]
+- GitHub: [tu-github]
 
-Para consultas sobre el proyecto educativo, puedes contactar al autor a través de tu institución educativa.
+## 🙏 Agradecimientos
+
+- Equipo docente del curso TENS
+- Profesionales de la salud que contribuyeron con casos clínicos
+- Comunidad de desarrolladores de Streamlit
 
 ---
 
-**© 2025. Todos los derechos reservados.**
-
-*Este simulador está diseñado específicamente para uso educativo en el contexto de formación de Técnicos en Enfermería de Nivel Superior (TENS) en Chile.* 
+**© 2025. Todos los derechos reservados.** 

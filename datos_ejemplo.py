@@ -273,6 +273,534 @@ FAMILIAS_EJEMPLO = [
         "observaciones": "Familia en situación crítica, requiere intervención multisectorial",
         "fecha_registro": "2024-01-17",
         "responsable": "TENS Pedro López"
+    },
+    {
+        "sector": "Sector Norte",
+        "apellido": "Herrera",
+        "num_integrantes": 4,
+        "jefe_hogar": {
+            "nombre": "Miguel Herrera",
+            "edad": 41,
+            "ocupacion": "Empleado"
+        },
+        "vivienda": {
+            "tipo": "Casa",
+            "hacinamiento": "Medio",
+            "red_apoyo": "Regular",
+            "participacion_social": "Media",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Diabetes"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Medio", "puntaje": 7},
+            "sanitario": {"nivel": "Medio", "puntaje": 6}
+        },
+        "observaciones": "Familia estable, requiere educación en diabetes",
+        "fecha_registro": "2024-01-18",
+        "responsable": "TENS Ana Martínez"
+    },
+    {
+        "sector": "Sector Centro",
+        "apellido": "Vargas",
+        "num_integrantes": 3,
+        "jefe_hogar": {
+            "nombre": "Elena Vargas",
+            "edad": 28,
+            "ocupacion": "Empleada"
+        },
+        "vivienda": {
+            "tipo": "Departamento",
+            "hacinamiento": "Bajo",
+            "red_apoyo": "Fuerte",
+            "participacion_social": "Alta",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": [],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Bajo", "puntaje": 2},
+            "sanitario": {"nivel": "Bajo", "puntaje": 3}
+        },
+        "observaciones": "Familia saludable, sin factores de riesgo",
+        "fecha_registro": "2024-01-18",
+        "responsable": "Enf. Carlos Rodríguez"
+    },
+    {
+        "sector": "Sector Sur",
+        "apellido": "Rojas",
+        "num_integrantes": 7,
+        "jefe_hogar": {
+            "nombre": "Francisco Rojas",
+            "edad": 39,
+            "ocupacion": "Desempleado"
+        },
+        "vivienda": {
+            "tipo": "Mediagua",
+            "hacinamiento": "Alto",
+            "red_apoyo": "Débil",
+            "participacion_social": "Baja",
+            "acceso_aps": "Difícil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Hipertensión"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": True,
+            "consumo_drogas": True,
+            "desempleo": True,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Alto", "puntaje": 14},
+            "sanitario": {"nivel": "Alto", "puntaje": 10}
+        },
+        "observaciones": "Familia con múltiples factores de riesgo, requiere intervención integral",
+        "fecha_registro": "2024-01-19",
+        "responsable": "TENS Pedro López"
+    },
+    {
+        "sector": "Sector Norte",
+        "apellido": "Díaz",
+        "num_integrantes": 2,
+        "jefe_hogar": {
+            "nombre": "Rosa Díaz",
+            "edad": 67,
+            "ocupacion": "Jubilada"
+        },
+        "vivienda": {
+            "tipo": "Casa",
+            "hacinamiento": "Bajo",
+            "red_apoyo": "Fuerte",
+            "participacion_social": "Alta",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Artritis", "Hipertensión"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": True
+        },
+        "riesgos": {
+            "social": {"nivel": "Bajo", "puntaje": 3},
+            "sanitario": {"nivel": "Medio", "puntaje": 7}
+        },
+        "observaciones": "Adulto mayor con buen apoyo familiar y acceso a servicios",
+        "fecha_registro": "2024-01-19",
+        "responsable": "TENS Ana Martínez"
+    },
+    {
+        "sector": "Sector Centro",
+        "apellido": "Morales",
+        "num_integrantes": 5,
+        "jefe_hogar": {
+            "nombre": "Carlos Morales",
+            "edad": 44,
+            "ocupacion": "Empleado"
+        },
+        "vivienda": {
+            "tipo": "Casa",
+            "hacinamiento": "Medio",
+            "red_apoyo": "Regular",
+            "participacion_social": "Media",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Obesidad", "Diabetes"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Medio", "puntaje": 6},
+            "sanitario": {"nivel": "Alto", "puntaje": 8}
+        },
+        "observaciones": "Familia con problemas de salud crónicos, requiere educación nutricional",
+        "fecha_registro": "2024-01-20",
+        "responsable": "Enf. Carlos Rodríguez"
+    },
+    {
+        "sector": "Sector Sur",
+        "apellido": "Torres",
+        "num_integrantes": 4,
+        "jefe_hogar": {
+            "nombre": "Ana Torres",
+            "edad": 31,
+            "ocupacion": "Dueña de casa"
+        },
+        "vivienda": {
+            "tipo": "Casa",
+            "hacinamiento": "Medio",
+            "red_apoyo": "Regular",
+            "participacion_social": "Baja",
+            "acceso_aps": "Difícil"
+        },
+        "salud": {
+            "enfermedades_cronicas": [],
+            "embarazo_adolescente": True,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Medio", "puntaje": 8},
+            "sanitario": {"nivel": "Medio", "puntaje": 6}
+        },
+        "observaciones": "Embarazo adolescente, requiere apoyo psicosocial y educación sexual",
+        "fecha_registro": "2024-01-20",
+        "responsable": "TENS Pedro López"
+    },
+    {
+        "sector": "Sector Norte",
+        "apellido": "Castro",
+        "num_integrantes": 6,
+        "jefe_hogar": {
+            "nombre": "Luis Castro",
+            "edad": 48,
+            "ocupacion": "Empleado"
+        },
+        "vivienda": {
+            "tipo": "Casa",
+            "hacinamiento": "Alto",
+            "red_apoyo": "Débil",
+            "participacion_social": "Baja",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Hipertensión"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Medio", "puntaje": 9},
+            "sanitario": {"nivel": "Medio", "puntaje": 6}
+        },
+        "observaciones": "Familia numerosa con hacinamiento, requiere apoyo habitacional",
+        "fecha_registro": "2024-01-21",
+        "responsable": "TENS Ana Martínez"
+    },
+    {
+        "sector": "Sector Centro",
+        "apellido": "Flores",
+        "num_integrantes": 3,
+        "jefe_hogar": {
+            "nombre": "María Flores",
+            "edad": 55,
+            "ocupacion": "Jubilada"
+        },
+        "vivienda": {
+            "tipo": "Departamento",
+            "hacinamiento": "Bajo",
+            "red_apoyo": "Fuerte",
+            "participacion_social": "Alta",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Diabetes", "Artritis"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": True
+        },
+        "riesgos": {
+            "social": {"nivel": "Bajo", "puntaje": 2},
+            "sanitario": {"nivel": "Medio", "puntaje": 7}
+        },
+        "observaciones": "Adulto mayor con enfermedades crónicas controladas",
+        "fecha_registro": "2024-01-21",
+        "responsable": "Enf. Carlos Rodríguez"
+    },
+    {
+        "sector": "Sector Sur",
+        "apellido": "Pérez",
+        "num_integrantes": 6,
+        "jefe_hogar": {
+            "nombre": "Juan Pérez",
+            "edad": 35,
+            "ocupacion": "Obrero"
+        },
+        "vivienda": {
+            "tipo": "Mediagua",
+            "hacinamiento": "Crítico",
+            "red_apoyo": "Débil",
+            "participacion_social": "Baja",
+            "acceso_aps": "Muy difícil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Tuberculosis"],
+            "embarazo_adolescente": True,
+            "violencia_intrafamiliar": True,
+            "consumo_drogas": True,
+            "desempleo": True,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Crítico", "puntaje": 18},
+            "sanitario": {"nivel": "Crítico", "puntaje": 15}
+        },
+        "observaciones": "Familia en extrema vulnerabilidad, requiere intervención urgente y coordinada",
+        "fecha_registro": "2024-01-16",
+        "responsable": "TENS Carlos Ramírez"
+    },
+    {
+        "sector": "Sector Norte",
+        "apellido": "López",
+        "num_integrantes": 4,
+        "jefe_hogar": {
+            "nombre": "Patricia López",
+            "edad": 42,
+            "ocupacion": "Trabajadora doméstica"
+        },
+        "vivienda": {
+            "tipo": "Departamento",
+            "hacinamiento": "Medio",
+            "red_apoyo": "Regular",
+            "participacion_social": "Media",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Asma"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": True,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Medio", "puntaje": 7},
+            "sanitario": {"nivel": "Medio", "puntaje": 6}
+        },
+        "observaciones": "Familia con hijo discapacitado, requiere apoyo en rehabilitación",
+        "fecha_registro": "2024-01-16",
+        "responsable": "TENS Ana Martínez"
+    },
+    {
+        "sector": "Sector Centro",
+        "apellido": "Martínez",
+        "num_integrantes": 2,
+        "jefe_hogar": {
+            "nombre": "Elena Martínez",
+            "edad": 68,
+            "ocupacion": "Jubilada"
+        },
+        "vivienda": {
+            "tipo": "Casa",
+            "hacinamiento": "Bajo",
+            "red_apoyo": "Fuerte",
+            "participacion_social": "Alta",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Diabetes", "Hipertensión", "Artritis"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": True
+        },
+        "riesgos": {
+            "social": {"nivel": "Bajo", "puntaje": 2},
+            "sanitario": {"nivel": "Alto", "puntaje": 8}
+        },
+        "observaciones": "Adulto mayor independiente, buen control de enfermedades crónicas",
+        "fecha_registro": "2024-01-16",
+        "responsable": "TENS María González"
+    },
+    {
+        "sector": "Sector Sur",
+        "apellido": "Soto",
+        "num_integrantes": 7,
+        "jefe_hogar": {
+            "nombre": "Miguel Soto",
+            "edad": 28,
+            "ocupacion": "Desempleado"
+        },
+        "vivienda": {
+            "tipo": "Casa",
+            "hacinamiento": "Alto",
+            "red_apoyo": "Débil",
+            "participacion_social": "Baja",
+            "acceso_aps": "Difícil"
+        },
+        "salud": {
+            "enfermedades_cronicas": [],
+            "embarazo_adolescente": True,
+            "violencia_intrafamiliar": True,
+            "consumo_drogas": True,
+            "desempleo": True,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Alto", "puntaje": 14},
+            "sanitario": {"nivel": "Alto", "puntaje": 9}
+        },
+        "observaciones": "Familia numerosa con múltiples factores de riesgo, requiere intervención integral",
+        "fecha_registro": "2024-01-17",
+        "responsable": "TENS Carlos Ramírez"
+    },
+    {
+        "sector": "Sector Norte",
+        "apellido": "Vega",
+        "num_integrantes": 3,
+        "jefe_hogar": {
+            "nombre": "Ricardo Vega",
+            "edad": 39,
+            "ocupacion": "Técnico"
+        },
+        "vivienda": {
+            "tipo": "Casa",
+            "hacinamiento": "Bajo",
+            "red_apoyo": "Fuerte",
+            "participacion_social": "Alta",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Hipertensión"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Bajo", "puntaje": 3},
+            "sanitario": {"nivel": "Medio", "puntaje": 5}
+        },
+        "observaciones": "Familia estable, buen control de hipertensión",
+        "fecha_registro": "2024-01-17",
+        "responsable": "TENS Ana Martínez"
+    },
+    {
+        "sector": "Sector Centro",
+        "apellido": "Reyes",
+        "num_integrantes": 5,
+        "jefe_hogar": {
+            "nombre": "Sofía Reyes",
+            "edad": 44,
+            "ocupacion": "Profesora"
+        },
+        "vivienda": {
+            "tipo": "Departamento",
+            "hacinamiento": "Medio",
+            "red_apoyo": "Fuerte",
+            "participacion_social": "Alta",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Obesidad"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Bajo", "puntaje": 2},
+            "sanitario": {"nivel": "Medio", "puntaje": 6}
+        },
+        "observaciones": "Familia funcional, requiere educación en hábitos saludables",
+        "fecha_registro": "2024-01-17",
+        "responsable": "TENS María González"
+    },
+    {
+        "sector": "Sector Sur",
+        "apellido": "Navarro",
+        "num_integrantes": 4,
+        "jefe_hogar": {
+            "nombre": "Carlos Navarro",
+            "edad": 31,
+            "ocupacion": "Agricultor"
+        },
+        "vivienda": {
+            "tipo": "Casa",
+            "hacinamiento": "Medio",
+            "red_apoyo": "Regular",
+            "participacion_social": "Media",
+            "acceso_aps": "Difícil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Diabetes"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Medio", "puntaje": 6},
+            "sanitario": {"nivel": "Medio", "puntaje": 7}
+        },
+        "observaciones": "Familia rural, requiere apoyo en control de diabetes",
+        "fecha_registro": "2024-01-18",
+        "responsable": "TENS Carlos Ramírez"
+    },
+    {
+        "sector": "Sector Norte",
+        "apellido": "Jiménez",
+        "num_integrantes": 6,
+        "jefe_hogar": {
+            "nombre": "Alejandra Jiménez",
+            "edad": 36,
+            "ocupacion": "Vendedora"
+        },
+        "vivienda": {
+            "tipo": "Departamento",
+            "hacinamiento": "Alto",
+            "red_apoyo": "Regular",
+            "participacion_social": "Media",
+            "acceso_aps": "Fácil"
+        },
+        "salud": {
+            "enfermedades_cronicas": ["Hipertensión"],
+            "embarazo_adolescente": False,
+            "violencia_intrafamiliar": False,
+            "consumo_drogas": False,
+            "desempleo": False,
+            "discapacidad": False,
+            "adulto_mayor": False
+        },
+        "riesgos": {
+            "social": {"nivel": "Medio", "puntaje": 8},
+            "sanitario": {"nivel": "Medio", "puntaje": 6}
+        },
+        "observaciones": "Familia numerosa, requiere apoyo en control de hipertensión y hacinamiento",
+        "fecha_registro": "2024-01-18",
+        "responsable": "TENS Ana Martínez"
     }
 ]
 
@@ -346,6 +874,121 @@ INSTITUCIONES_EJEMPLO = [
         "debilidades": "Horarios limitados, alta demanda",
         "oportunidades_trabajo": "Coordinación de atención, derivaciones, programas conjuntos",
         "fecha_registro": "2024-01-10"
+    },
+    {
+        "nombre": "Centro Comunitario Los Pinos",
+        "tipo": "Comunitario",
+        "sectores_cobertura": ["Sector Norte"],
+        "contacto": {
+            "nombre": "Sra. Carmen López",
+            "telefono": "+56 9 7890 1234",
+            "email": "director@centropinos.cl"
+        },
+        "informacion": {
+            "horario": "Lunes a Sábado 9:00-21:00",
+            "modalidad": "Presencial",
+            "nivel_coordinacion": "Buena",
+            "frecuencia_contacto": "Semanal"
+        },
+        "recursos": ["Espacios de reunión", "Sala de computación", "Talleres", "Área deportiva"],
+        "poblacion_objetivo": ["Familias", "Jóvenes", "Adultos mayores"],
+        "programas_servicios": "Talleres de manualidades, computación, deportes, actividades culturales",
+        "fortalezas": "Espacios amplios, horarios flexibles, personal comprometido",
+        "debilidades": "Recursos limitados, dependencia de financiamiento externo",
+        "oportunidades_trabajo": "Talleres de salud, actividades preventivas, reuniones comunitarias",
+        "fecha_registro": "2024-01-11"
+    },
+    {
+        "nombre": "Junta de Vecinos Sector Sur",
+        "tipo": "Organización Comunitaria",
+        "sectores_cobertura": ["Sector Sur"],
+        "contacto": {
+            "nombre": "Sr. Manuel Rojas",
+            "telefono": "+56 9 8901 2345",
+            "email": "presidente@juntasursur.cl"
+        },
+        "informacion": {
+            "horario": "Lunes a Viernes 18:00-20:00",
+            "modalidad": "Presencial",
+            "nivel_coordinacion": "Regular",
+            "frecuencia_contacto": "Mensual"
+        },
+        "recursos": ["Sede social", "Líderes comunitarios", "Red de contactos"],
+        "poblacion_objetivo": ["Vecinos del sector", "Familias"],
+        "programas_servicios": "Organización de eventos comunitarios, gestión de mejoras barriales",
+        "fortalezas": "Conocimiento del territorio, liderazgo local, participación activa",
+        "debilidades": "Recursos limitados, dependencia de voluntarios",
+        "oportunidades_trabajo": "Difusión de programas de salud, organización de actividades preventivas",
+        "fecha_registro": "2024-01-11"
+    },
+    {
+        "nombre": "Centro de Rehabilitación San Juan",
+        "tipo": "Salud",
+        "sectores_cobertura": ["Sector Norte", "Sector Centro", "Sector Sur"],
+        "contacto": {
+            "nombre": "Dra. Patricia Morales",
+            "telefono": "+56 9 9012 3456",
+            "email": "director@rehabilitacion.cl"
+        },
+        "informacion": {
+            "horario": "Lunes a Viernes 8:00-18:00",
+            "modalidad": "Presencial",
+            "nivel_coordinacion": "Excelente",
+            "frecuencia_contacto": "Semanal"
+        },
+        "recursos": ["Kinesiólogos", "Terapeutas ocupacionales", "Equipamiento especializado"],
+        "poblacion_objetivo": ["Personas con discapacidad", "Adultos mayores", "Pacientes post-operatorios"],
+        "programas_servicios": "Rehabilitación física, terapia ocupacional, apoyo psicosocial",
+        "fortalezas": "Personal especializado, equipamiento moderno, programas integrales",
+        "debilidades": "Cupos limitados, lista de espera",
+        "oportunidades_trabajo": "Derivaciones, coordinación de tratamientos, educación en prevención",
+        "fecha_registro": "2024-01-12"
+    },
+    {
+        "nombre": "Liceo Técnico Profesional",
+        "tipo": "Educación",
+        "sectores_cobertura": ["Sector Norte", "Sector Centro"],
+        "contacto": {
+            "nombre": "Prof. Roberto Silva",
+            "telefono": "+56 9 0123 4567",
+            "email": "director@liceotecnico.cl"
+        },
+        "informacion": {
+            "horario": "Lunes a Viernes 8:00-18:00",
+            "modalidad": "Presencial",
+            "nivel_coordinacion": "Buena",
+            "frecuencia_contacto": "Quincenal"
+        },
+        "recursos": ["Aulas", "Laboratorios", "Talleres", "Personal docente"],
+        "poblacion_objetivo": ["Adolescentes", "Jóvenes", "Familias"],
+        "programas_servicios": "Educación media técnico-profesional, talleres de formación laboral",
+        "fortalezas": "Infraestructura adecuada, programas técnicos, vinculación con empresas",
+        "debilidades": "Recursos tecnológicos limitados, alta demanda",
+        "oportunidades_trabajo": "Educación en salud sexual, prevención de drogas, orientación vocacional",
+        "fecha_registro": "2024-01-12"
+    },
+    {
+        "nombre": "Centro de la Mujer",
+        "tipo": "Social",
+        "sectores_cobertura": ["Sector Norte", "Sector Centro", "Sector Sur"],
+        "contacto": {
+            "nombre": "Sra. Ana María González",
+            "telefono": "+56 9 1234 5678",
+            "email": "directora@centromujer.cl"
+        },
+        "informacion": {
+            "horario": "Lunes a Viernes 9:00-17:00",
+            "modalidad": "Presencial",
+            "nivel_coordinacion": "Excelente",
+            "frecuencia_contacto": "Semanal"
+        },
+        "recursos": ["Psicólogas", "Trabajadoras sociales", "Abogadas", "Espacios de atención"],
+        "poblacion_objetivo": ["Mujeres", "Familias afectadas por violencia"],
+        "programas_servicios": "Atención psicológica, asesoría legal, apoyo a víctimas de violencia",
+        "fortalezas": "Personal especializado, protocolos establecidos, trabajo en red",
+        "debilidades": "Cupos limitados, alta demanda",
+        "oportunidades_trabajo": "Derivaciones, coordinación de casos, talleres de prevención",
+        "fecha_registro": "2024-01-13"
     }
 ]
 
@@ -473,6 +1116,48 @@ PARTICIPACION_COMUNITARIA_EJEMPLO = {
             'necesidades': ['Salud del Adulto Mayor', 'Prevención de Cáncer', 'Salud Sexual y Reproductiva'],
             'barreras': ['Distancia', 'Problemas de Transporte', 'Falta de Información'],
             'observaciones': 'Alto interés en programas preventivos, especialmente para adultos mayores. Barreras de acceso geográfico identificadas.'
+        },
+        {
+            'id': 3,
+            'tipo': 'Salud del Adulto Mayor',
+            'fecha': '2024-01-22',
+            'sector': 'Sector B',
+            'num_encuestados': 32,
+            'metodo': 'Presencial',
+            'duracion': 15,
+            'satisfaccion': 4,
+            'participacion': 4,
+            'necesidades': ['Control de Enfermedades Crónicas', 'Actividad Física', 'Socialización'],
+            'barreras': ['Movilidad Reducida', 'Falta de Acompañamiento', 'Horarios Inadecuados'],
+            'observaciones': 'Alta demanda de actividades grupales y control de enfermedades crónicas. Necesidad de transporte y acompañamiento.'
+        },
+        {
+            'id': 4,
+            'tipo': 'Salud Sexual y Reproductiva',
+            'fecha': '2024-01-25',
+            'sector': 'Sector C',
+            'num_encuestados': 28,
+            'metodo': 'Digital',
+            'duracion': 10,
+            'satisfaccion': 3,
+            'participacion': 2,
+            'necesidades': ['Educación Sexual', 'Acceso a Anticonceptivos', 'Prevención de ITS'],
+            'barreras': ['Tabúes Culturales', 'Falta de Privacidad', 'Horarios Limitados'],
+            'observaciones': 'Baja participación debido a tabúes culturales. Necesidad de abordaje sensible y confidencial.'
+        },
+        {
+            'id': 5,
+            'tipo': 'Prevención de Obesidad Infantil',
+            'fecha': '2024-01-28',
+            'sector': 'Todos los Sectores',
+            'num_encuestados': 67,
+            'metodo': 'Presencial',
+            'duracion': 8,
+            'satisfaccion': 4,
+            'participacion': 4,
+            'necesidades': ['Educación Nutricional', 'Actividad Física', 'Control de Peso'],
+            'barreras': ['Falta de Tiempo', 'Recursos Económicos', 'Espacios Deportivos'],
+            'observaciones': 'Alto interés en programas de prevención. Familias dispuestas a participar en talleres educativos.'
         }
     ],
     'grupos_focales': [
@@ -494,6 +1179,66 @@ PARTICIPACION_COMUNITARIA_EJEMPLO = {
             'hallazgos_negativos': 'Estigma hacia problemas de salud mental. Falta de especialistas en el CESFAM.',
             'recomendaciones': 'Implementar talleres grupales, capacitar al equipo en primeros auxilios psicológicos, coordinar con especialistas externos.',
             'participacion': 4,
+            'satisfaccion': 5
+        },
+        {
+            'id': 2,
+            'tema': 'Prevención de Diabetes',
+            'fecha': '2024-01-23',
+            'participantes': 15,
+            'perfil': 'Personas con prediabetes y familiares',
+            'duracion': 1.5,
+            'facilitador': 'Nutricionista Carmen Silva',
+            'preguntas': [
+                '¿Qué saben sobre la diabetes y sus factores de riesgo?',
+                '¿Qué barreras identifican para mantener una alimentación saludable?',
+                '¿Cómo les gustaría recibir educación sobre diabetes?',
+                '¿Qué apoyo necesitan de la familia y la comunidad?'
+            ],
+            'hallazgos_positivos': 'Alto interés en aprender sobre alimentación saludable. Reconocimiento de la importancia del ejercicio.',
+            'hallazgos_negativos': 'Falta de conocimiento sobre diabetes. Barreras económicas para alimentación saludable.',
+            'recomendaciones': 'Talleres de cocina saludable, grupos de apoyo, educación familiar, coordinación con programas de alimentación.',
+            'participacion': 5,
+            'satisfaccion': 4
+        },
+        {
+            'id': 3,
+            'tema': 'Violencia Intrafamiliar',
+            'fecha': '2024-01-26',
+            'participantes': 8,
+            'perfil': 'Mujeres víctimas de violencia',
+            'duracion': 2.5,
+            'facilitador': 'Trabajadora Social Patricia Rojas',
+            'preguntas': [
+                '¿Qué tipos de violencia han experimentado?',
+                '¿Qué barreras identifican para denunciar?',
+                '¿Qué apoyo necesitan para salir de la situación?',
+                '¿Cómo puede la comunidad ayudar a prevenir la violencia?'
+            ],
+            'hallazgos_positivos': 'Valoración del apoyo profesional. Interés en grupos de apoyo.',
+            'hallazgos_negativos': 'Miedo a denunciar, dependencia económica, falta de redes de apoyo.',
+            'recomendaciones': 'Protocolos de derivación, grupos de apoyo, capacitación en detección temprana, coordinación con instituciones especializadas.',
+            'participacion': 3,
+            'satisfaccion': 4
+        },
+        {
+            'id': 4,
+            'tema': 'Actividad Física en Adultos Mayores',
+            'fecha': '2024-01-29',
+            'participantes': 20,
+            'perfil': 'Adultos mayores activos',
+            'duracion': 1.0,
+            'facilitador': 'Kinesiólogo Roberto Díaz',
+            'preguntas': [
+                '¿Qué actividades físicas realizan actualmente?',
+                '¿Qué barreras identifican para hacer ejercicio?',
+                '¿Qué tipo de actividades les gustaría realizar?',
+                '¿Cómo puede la comunidad facilitar la actividad física?'
+            ],
+            'hallazgos_positivos': 'Alto interés en actividades grupales. Reconocimiento de los beneficios del ejercicio.',
+            'hallazgos_negativos': 'Falta de espacios adecuados, problemas de movilidad, horarios inadecuados.',
+            'recomendaciones': 'Programas de ejercicio adaptado, espacios seguros, horarios flexibles, transporte comunitario.',
+            'participacion': 5,
             'satisfaccion': 5
         }
     ],
@@ -675,6 +1420,32 @@ EPIDEMIOLOGIA_EJEMPLO = {
             'menores_15': 180,
             'mayores_65': 220,
             'indice_dependencia': 40.0
+        },
+        {
+            'id': 4,
+            'tipo': 'Natalidad',
+            'fecha': '2024-01-30',
+            'sector': 'Todos los Sectores',
+            'periodo': 'Último año',
+            'fuente': 'Registro civil',
+            'observaciones': 'Baja natalidad, algunos embarazos adolescentes',
+            'nacimientos': 12,
+            'poblacion_total': 1000,
+            'tasa_natalidad': 12.0,
+            'embarazos_adolescentes': 3
+        },
+        {
+            'id': 5,
+            'tipo': 'Vacunación',
+            'fecha': '2024-02-01',
+            'sector': 'Todos los Sectores',
+            'periodo': 'Último mes',
+            'fuente': 'Programa de inmunizaciones',
+            'observaciones': 'Cobertura adecuada en niños, baja en adultos',
+            'poblacion_objetivo': 200,
+            'vacunados': 180,
+            'cobertura': 90.0,
+            'vacunas': ['Influenza', 'COVID-19', 'Neumococo']
         }
     ],
     'patologias_prioritarias': [
@@ -711,6 +1482,57 @@ EPIDEMIOLOGIA_EJEMPLO = {
             'factores_asociados': ['Obesidad', 'Estrés', 'Mala alimentación'],
             'intervenciones': ['Control médico regular', 'Educación en salud', 'Apoyo psicológico'],
             'observaciones': 'Patología más frecuente en la población, buen control en la mayoría de casos'
+        },
+        {
+            'id': 3,
+            'patologia': 'Obesidad',
+            'fecha': '2024-01-25',
+            'sector': 'Todos los Sectores',
+            'prioridad': 'Media',
+            'tendencia': 'En aumento',
+            'casos_activos': 85,
+            'casos_nuevos': 12,
+            'poblacion': 1000,
+            'edad_promedio': 45,
+            'prevalencia': 85.0,
+            'incidencia_mensual': 12.0,
+            'factores_asociados': ['Mala alimentación', 'Sedentarismo', 'Factores genéticos'],
+            'intervenciones': ['Educación nutricional', 'Programas de ejercicio', 'Control de peso'],
+            'observaciones': 'Alta prevalencia en adultos, necesidad de intervenciones preventivas desde la infancia'
+        },
+        {
+            'id': 4,
+            'patologia': 'Depresión',
+            'fecha': '2024-01-28',
+            'sector': 'Todos los Sectores',
+            'prioridad': 'Alta',
+            'tendencia': 'En aumento',
+            'casos_activos': 25,
+            'casos_nuevos': 6,
+            'poblacion': 1000,
+            'edad_promedio': 52,
+            'prevalencia': 25.0,
+            'incidencia_mensual': 6.0,
+            'factores_asociados': ['Estrés', 'Aislamiento social', 'Problemas económicos'],
+            'intervenciones': ['Atención psicológica', 'Grupos de apoyo', 'Actividades sociales'],
+            'observaciones': 'Subdiagnosticada, necesidad de mejorar detección y acceso a tratamiento'
+        },
+        {
+            'id': 5,
+            'patologia': 'Violencia Intrafamiliar',
+            'fecha': '2024-02-01',
+            'sector': 'Todos los Sectores',
+            'prioridad': 'Alta',
+            'tendencia': 'Estable',
+            'casos_activos': 15,
+            'casos_nuevos': 3,
+            'poblacion': 1000,
+            'edad_promedio': 38,
+            'prevalencia': 15.0,
+            'incidencia_mensual': 3.0,
+            'factores_asociados': ['Alcoholismo', 'Problemas económicos', 'Historia familiar'],
+            'intervenciones': ['Detección temprana', 'Derivación especializada', 'Apoyo psicosocial'],
+            'observaciones': 'Subregistrada, necesidad de protocolos de detección y derivación'
         }
     ],
     'vigilancia_epidemiologica': [
@@ -731,7 +1553,45 @@ EPIDEMIOLOGIA_EJEMPLO = {
             'sintomas': ['Fiebre', 'Tos', 'Dolor de cabeza'],
             'factores_riesgo': ['Hacinamiento', 'Contacto con enfermos'],
             'acciones': ['Educación comunitaria', 'Refuerzo de medidas preventivas'],
-            'observaciones': 'Aumento estacional esperado, casos leves en su mayoría'
+            'estado': 'Controlado'
+        },
+        {
+            'id': 2,
+            'evento': 'Gastroenteritis',
+            'fecha_inicio': '2024-01-15',
+            'fecha_fin': '2024-01-25',
+            'nivel_alerta': 'Bajo',
+            'sector': 'Sector Sur',
+            'casos_sospechosos': 8,
+            'casos_confirmados': 5,
+            'casos_graves': 0,
+            'defunciones': 0,
+            'poblacion_expuesta': 300,
+            'tasa_ataque': 1.7,
+            'grupo_edad': ['0-4 años', 'Adultos'],
+            'sintomas': ['Diarrea', 'Vómitos', 'Fiebre'],
+            'factores_riesgo': ['Agua contaminada', 'Mala higiene'],
+            'acciones': ['Educación en higiene', 'Cloración de agua'],
+            'estado': 'Controlado'
+        },
+        {
+            'id': 3,
+            'evento': 'Dengue',
+            'fecha_inicio': '2024-01-20',
+            'fecha_fin': '2024-02-05',
+            'nivel_alerta': 'Alto',
+            'sector': 'Todos los Sectores',
+            'casos_sospechosos': 12,
+            'casos_confirmados': 8,
+            'casos_graves': 1,
+            'defunciones': 0,
+            'poblacion_expuesta': 1000,
+            'tasa_ataque': 0.8,
+            'grupo_edad': ['Todas las edades'],
+            'sintomas': ['Fiebre', 'Dolor de cabeza', 'Dolor muscular'],
+            'factores_riesgo': ['Presencia de mosquitos', 'Agua estancada'],
+            'acciones': ['Control vectorial', 'Educación comunitaria', 'Eliminación de criaderos'],
+            'estado': 'En seguimiento'
         }
     ],
     'factores_riesgo': [

@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
+from sistema_inteligente import analizar_datos_comunidad
 
 def mostrar_diagnostico():
     st.markdown("""
@@ -381,4 +382,101 @@ def mostrar_diagnostico():
             st.error("• Establecer alianzas con programas de tratamiento de adicciones")
         
         if sum(1 for f in st.session_state.familias if f["vivienda"]["red_apoyo"] == "Débil") > 0:
-            st.info("• Fortalecer redes de apoyo comunitario") 
+            st.info("• Fortalecer redes de apoyo comunitario")
+    
+    # Dashboard Inteligente
+    st.markdown("---")
+    st.markdown("### 🤖 Dashboard Inteligente")
+    
+    if st.button("🔄 Actualizar Análisis Inteligente", key="actualizar_dashboard"):
+        with st.spinner("Analizando datos en tiempo real..."):
+            diagnostico_inteligente = analizar_datos_comunidad()
+            
+            # Métricas inteligentes
+            col1, col2, col3, col4 = st.columns(4)
+            
+            with col1:
+                total_problemas = len(diagnostico_inteligente['problemas_prioritarios'])
+                st.metric("Problemas Prioritarios", total_problemas)
+            
+            with col2:
+                total_vulnerables = len(diagnostico_inteligente['poblaciones_vulnerables'])
+                st.metric("Poblaciones Vulnerables", total_vulnerables)
+            
+            with col3:
+                total_fortalezas = len(set(diagnostico_inteligente['fortalezas_comunitarias']))
+                st.metric("Fortalezas Identificadas", total_fortalezas)
+            
+            with col4:
+                total_recursos = len(diagnostico_inteligente['recursos_disponibles'])
+                st.metric("Recursos Disponibles", total_recursos)
+            
+            # Alertas inteligentes
+            st.subheader("🚨 Alertas Inteligentes")
+            
+            if diagnostico_inteligente['problemas_prioritarios']:
+                st.error("**ALERTA CRÍTICA:** Se identificaron problemas prioritarios que requieren intervención inmediata")
+                for problema in diagnostico_inteligente['problemas_prioritarios']:
+                    st.write(f"• **{problema['problema'].title()}**: {problema['cantidad']} familias afectadas ({problema['porcentaje']:.1f}%)")
+            else:
+                st.success("✅ **SITUACIÓN ESTABLE:** No se identificaron problemas prioritarios")
+            
+            if diagnostico_inteligente['poblaciones_vulnerables']:
+                st.warning("**ATENCIÓN:** Poblaciones vulnerables identificadas")
+                for poblacion in diagnostico_inteligente['poblaciones_vulnerables']:
+                    st.write(f"• {poblacion}")
+            
+            # Oportunidades de intervención
+            if diagnostico_inteligente['fortalezas_comunitarias']:
+                st.subheader("💪 Oportunidades de Intervención")
+                st.success("**Fortalezas comunitarias que pueden potenciarse:**")
+                for fortaleza in set(diagnostico_inteligente['fortalezas_comunitarias']):
+                    st.write(f"• {fortaleza}")
+            
+            if diagnostico_inteligente['recursos_disponibles']:
+                st.info("**Recursos disponibles para alianzas:**")
+                for recurso in diagnostico_inteligente['recursos_disponibles']:
+                    st.write(f"• {recurso}")
+            
+            # Recomendaciones automáticas
+            st.subheader("🎯 Recomendaciones Automáticas")
+            
+            if diagnostico_inteligente['problemas_prioritarios']:
+                st.info("**Acciones recomendadas:**")
+                
+                for problema in diagnostico_inteligente['problemas_prioritarios']:
+                    if problema['problema'] == 'diabetes':
+                        st.write("• Implementar programa de educación diabetológica")
+                        st.write("• Establecer grupos de apoyo para diabéticos")
+                    elif problema['problema'] == 'hipertension':
+                        st.write("• Crear programa de control de presión arterial")
+                        st.write("• Talleres de reducción de sodio")
+                    elif problema['problema'] == 'obesidad':
+                        st.write("• Programa de actividad física comunitaria")
+                        st.write("• Talleres de nutrición")
+                    elif problema['problema'] == 'violencia_intrafamiliar':
+                        st.write("• Protocolos de detección temprana")
+                        st.write("• Talleres de resolución pacífica de conflictos")
+                    elif problema['problema'] == 'consumo_drogas':
+                        st.write("• Programa de prevención en colegios")
+                        st.write("• Actividades deportivas y recreativas")
+                    elif problema['problema'] == 'embarazo_adolescente':
+                        st.write("• Educación sexual integral")
+                        st.write("• Acceso a métodos anticonceptivos")
+                    elif problema['problema'] == 'hacinamiento':
+                        st.write("• Gestión de subsidios habitacionales")
+                        st.write("• Asesoría en mejoras habitacionales")
+                    elif problema['problema'] == 'desempleo':
+                        st.write("• Programa de capacitación laboral")
+                        st.write("• Talleres de emprendimiento")
+                    elif problema['problema'] == 'baja_escolaridad':
+                        st.write("• Programa de alfabetización")
+                        st.write("• Apoyo escolar")
+                    elif problema['problema'] == 'acceso_salud':
+                        st.write("• Transporte comunitario a centros de salud")
+                        st.write("• Atención domiciliaria")
+            
+            # Botón para generar plan automático
+            if st.button("📋 Generar Plan de Intervención Automático", key="generar_plan_auto"):
+                st.success("✅ Plan generado automáticamente. Revisa el módulo 'Plan Anual' para ver las sugerencias.")
+                st.info("💡 **Tip:** Usa el botón 'Generar Sugerencias Inteligentes' en el módulo de Plan Anual para obtener intervenciones específicas.") 
